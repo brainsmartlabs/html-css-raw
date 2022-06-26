@@ -1,0 +1,297 @@
+Chapter-11
+
+1. History of HTML : 
+
+a) HTML 1.0 : HTML 1.0 was introduced in the year 1989 by Mr. Tim Berners-Lee. It was the first release of HTML to the world.
+
+HTML 1.0 pages were not very attractive & many developers didn't care much about presentation. 
+
+As many people were not involved in the web page creation the language had very limited scope. 
+
+b) HTML 2.0 : HTML 2.0 was introduced & developed in the year 1991. It included all the features of HTML 1.0 & some new better features were added.
+
+HTML 2.0 was standard for website creation until january 1997.
+
+c) HTML 3.0 : HTML 3.0 was developed in the year 1995 by Dave Raggett. At this time Netscape Navigator was most popular browser used.
+
+HTML 3.0  introduced several new features & powerful opportunities for webpage developers to create their webpages. But as the web browsers were slow in implimenting these new features a newer version of HTML had to be developed.
+
+d) HTML 3.2 : HTML 3.2 was developed by a new organization called 'World Wide Web Consortium(W3C)' found in the year 1994. W3C was formed to bring uniform standard in HTML.
+
+HTML 3.2 became the official standard of HTML since january 1997.
+
+e) HTML 4.0 : HTML 4.0 was developed in the year december 1997. It was totally different from HTML 3.2 & was considered as a huge step in the evolution of HTML. 
+
+Since there was a huge demand for presentation of webpages to be improved, HTML 4.0 introduced a new styling language called 'Cascading Style Sheet(CSS)'. 
+
+Where in, HTML was used basically for 'Structure of a webpage' & CSS was basically used for 'Presentation of a webpage'.
+
+HTML 4.0 became the official standard of HTML since april 1998. 
+
+f) HTML 4.01 : HTML 4.01 was developed & introduced in the year 1999. & it was considered as the constant version of HTML for the next decade.
+
+Compared to the previous versions of HTML, HTML 4.01 was considered better as all the browser would display the content of that HTML page, without any considerable amount of change.
+
+g) XHTML (Extensible Hyper Text Markup Language) : XHTML was the next phase of evolution in HTML. HTML 4.01 was completely replaced by XHTML.
+
+XHTML had a bigger focus on commitment to standards of HTML proposed by W3C.
+
+XHTML was stricter verion of HTML. In january 2000 XHTML was declared as standard of HTML along with HTML 4.01 version.
+
+h) HTML 5 : HTML 5 was developed in the year 2014. It was developed by W3C along with "Web Hypertext Application Technology Working Group(WHATWG)". 
+
+HTML 5 offers a host of new features including the special element such as <header>,<footer> etc.. So HTML 5 made structuring of HTML content more efficient.
+
+HTML 5 doesn't need any new added plugins to create complex & powerful webpages or websites.
+
+2. Introdution to 'doctype' in HTML 5 : 'doctype' or 'Document Type Declaration' is used to instruct the web browser about the version of markup language in which the page is written.
+
+The doctype delcaration is declared at the top of the HTML page before Declaring any other element.
+
+Note: The Doctype in HTML file is not case sensitive. It is usually written as follows: 
+<!doctype html>
+
+<!doctype html> : It is used to specify to the browser that the developer is using the HTML 5 version.
+
+3. Introducing 'meta' tag : In HTML meta tag is used for declaring meta data of that HTML page. It can include document description, keywords etc.
+
+The <meta> tag in HTML is written inside the opening & closing <head> tags.
+
+Example : <meta charset = "utf-8">
+
+a) charset is the attribute where we specify the character encoding.
+b) 'Character Encoding' is the process of converting characters into binary form(0's & 1's). 'Character Encoding' in HTML is very important as the computer understand only the binary language.
+c) 'utf-8' is an encoding in the Unicode family of encodings, which is used in webpages. 
+
+4. Adding 'doctype' & 'meta' tag our index.html file in chit-chat-corner :
+
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+        <title>Chit Chat Corner</title>
+        <style type = "text/css">
+            body{
+                background-color: #ffe8dd;
+                margin-left: 20%;
+                margin-right: 20%;
+                border: 4px double #ac5689;
+                padding: 10px 10px 10px 10px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head> 
+
+    <body>
+        
+        <center>
+            <img src="images/chit-chat-corner-logo.png" width="600" height="170">
+        </center>
+        
+        <center><h2>Welcome to Chit Chat Corner</h2></center>
+        <h3>Our Timings</h3>
+
+        <p>Weekdays : Evening 5 PM to 10 PM <br>
+           Weekends : Evening 4 PM to 11 PM</p>
+
+        <h3>Our Specials</h3>
+        <p>
+           <a href="menu/pani-puri.html"><img src = "thumbnail/pani-puri-tn.jpg"></a>
+           <a href="menu/masala-puri.html"><img src = "thumbnail/masala-puri-tn.jpg"></a>
+           <a href="menu/bhel-puri.html"><img src = "thumbnail/bhel-puri-tn.jpg"></a>
+           <a href="menu/sev-puri.html"><img src = "thumbnail/sev-puri-tn.jpg"></a>    
+        </p>
+        
+        <center>
+            <img src = "images/footer.png" height = "140" width = "750">
+        </center>
+        
+    </body>
+</html> 
+
+a) Cam focus on first line & enter keystroke appears.
+b) <!doctype html> appears with type animation in the first line.
+c) Cam pans down & between opening & closing <head> tag <meta charset = "utf-8"> appears with type animation.
+d) Show the output. (in output we could not see any changes & explain about it)
+e) Repeat the same steps to all html files in chit-chat-corner("pani-puri.html", "masala-puri.html", "bhel-puri.html" & "sev-puri.html").
+f) Show their respective outputs. 
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bhel Puri</title>
+        <style type = "text/css">
+            body{
+                background-color: #ffe8dd;
+                margin-left: 10%;
+                margin-right: 10%;
+                border: 2px solid #ac5689;
+                padding: 10px 10px 10px 10px;
+            }
+            img{
+                border: 4px ridge;
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <h1>Bhel Puri</h1>
+        <img src="../images/bhel-puri-web.jpg" alt="Tangy Bhel Puri">
+        <p> Puffed rice and sev,  mixed with potatoes, onions, Chat masala, chutney and mixture of fried snacks. Bhelpuri has a balance of sweet, salty, tart and spicy flavors, with different textures, including crispy and crunchy form of puffed rice and fried sev.</p>
+
+        <p><a href = "../index.html">Back to Home</a></p>
+    </body>
+</html>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Masala Puri</title>
+        <style type = "text/css">
+            body{
+                background-color: #ffe8dd;
+                margin-left: 10%;
+                margin-right: 10%;
+                border: 2px solid #ac5689;
+                padding: 10px 10px 10px 10px;
+            }
+            img{
+                border: 4px ridge;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Masala Puri</h1>
+        <img src="../images/masala-puri-web.jpg" alt="Hot Masala Puri">
+        <p>Crushed puris soaked in hot masala gravy made up of Puffed rice, green peas, chili powder, garam masala, chaat masala, coriander powder, Topped with small slices of onions (optional), tomatoes, carrot shavings, coriander leaves and sev.</p>
+
+        <p><a href = "../index.html">Back to Home</a>
+    </body>
+</html>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pani Puri</title>
+        <style type = "text/css">
+            body{
+                background-color: #ffe8dd;
+                margin-left: 10%;
+                margin-right: 10%;
+                border: 2px solid #ac5689;
+                padding: 10px 10px 10px 10px;
+            }
+            img{
+                border: 4px ridge;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pani Puri</h1>
+        <img src="../images/pani-puri-web.jpg" alt="Spicy Pani Puri">
+        <p>Round hollow puri, fried crisp and filled with a mixture of flavored pani, tamarind chutney, chili, chaat masala, potato, onion and chickpeas.
+        </p>
+        <p><a href = "../index.html">Back to Home</a>
+        </p>
+    </body>
+</html>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sev Puri</title>
+        <style type = "text/css">
+            body{
+                background-color: #ffe8dd;
+                margin-left: 10%;
+                margin-right: 10%;
+                border: 2px solid #ac5689;
+                padding: 10px 10px 10px 10px;
+            }
+
+            img{
+                border: 4px ridge;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sev Puri</h1>
+        <img src="../images/sev-puri-web.jpg" alt="Yummy Sev Puri">
+        <p>Puri loaded with diced potatoes, onions, three types of chutneys: tamarind, chili and garlic, topped with sev. It is seasoned with raw mango or with a hint of lemon and chaat masala.</p>
+
+        <p><a href = "../index.html">Back to Home</a>
+    </body>
+</html>
+
+5. Introduction to 'W3C validator' : 'W3C validator' is a free service provided by W3C, which is used to validate any webpage.
+
+W3C validator is located at 'http://validator.w3.org'.
+
+Validating web document is an important step which can dramatically help improving & ensuring their quality & maintain the HTML standards.
+
+6. Validation Interface : (Screen shot ani)
+
+a) In google type 'validator.w3.org' & click search.
+b) Validator page opens.
+c) There are three ways to validate a webpage using the validator they are 
+	validate by URL : (Circle appears around "validate by URL" & box with arrow appears containing the text "if your page is on the web you can type the URL here & click the check button to validate").
+
+	validate by file upload : (Circle appears around "validate by file upload" & box with arrow appears containing the text "if you have a HTML file in your system select & click upload, the browser will upload the file & later click on check button to validate").
+
+	validate by direct input : (Circle appears around "validate by direct input" & box with arrow appears containing the text "copy & paste your HTML content into the form on that tag & click check button to validate").
+
+7. Validating 'index.html' using validator : (Screen shot ani)
+
+We are using the second method that is 'validate by file upload' to validate our HTML file you can use any of the methods you are comfortable with.
+
+a) Validator screen will be present.
+b) Click on validate by file upload.
+c) Click on choose file.
+d) Select index.html file from chit-chat-corner folder.
+e) Click on check.
+f) All errors & waring appears on the screen.
+g) Cam focus on errors explain & zoom back.
+
+8. Bullet points : 
+
+a) HTML 5 is the current HTML standard.
+b) The organisation that decides the standard for HTML is known as 'World Wide Web Consortium(W3C)'.
+c) To determine the version of HTML, we write the doctype inside the HTML tag.
+d) The <meta> tag used inside the <head> element along with the charset attribute, tells the browser the 'character encoding' that is used in the webpage.
+e) 'utf-8' is the most common encoding used for all HTML files & for <meta> tag charset attribute.
+f) 'W3C validator' is a free online service provided by W3C which helps to validate the webpage & also make sure HTML standard is maintained in webpages.
+
+9. Is it compulsory to use 'doctype' & 'meta' tags in HTML pages?
+A. It is good to use 'doctype' & 'meta' tags in HTML page as it is an industry standard & the browser will be aware that we are using the HTML 5 version along with the 'Character encoding' that we are using.
+
+10. What is 'utf-8'?
+A. 'utf-8' is a part of the unicode encoding family where 'U' in utf-8 stands for unicode. utf-8 is the version we generally use in our webpages.
+
+Note : 'utf-8' is used as a value to the attribute charset & is always written inside the <meta> tag.
+
+11. The validator is validating a webpage according to which standard?
+A. The validator is validating a webpage according to HTML 5 standards, that is set by W3C organization(World Wide Web Consortium).
+
+12. What is the difference between HTML & HTML 5 ?
+A. There is no much difference between HTML & HTML 5, apart from a few new features added in HTML 5.
+From here on there won't be any version numbers used & everything will be called as 'HTML'.
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

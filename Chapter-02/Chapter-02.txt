@@ -1,0 +1,93 @@
+Chapter-02
+
+1. Html definition : Hyper Text Markup Language(HTML) is a standard markup language used for creating a web page or a web application, which involves coding by using : Tags & Attributes.
+
+2. Html basic structure : 
+
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Hello World</h1>
+		<p>Hi,this is a very minimal "hello world" HTML document.</p>
+	</body>
+</html>
+
+a) <html> : The <html> tag tells the browser this is a HTML document.
+b) <head> : A <head> tag is a non-viewable region in a html page, which can include sub tags like <title>, <script>, <style>, <meta> etc..
+c) <title> : The <title> tag gives the page a title, above the address bar.
+d) <body> : A <body> tag encloses the viewable information of a html document such as text, hyperlinks, images, tables, lists etc..
+e) <h1> : The <h1> tag in html is used to display a heading which is of a particular size.
+f) <p> : The <p> tag is used to display a paragraph inside our html page.
+
+3. What is a tag?
+A. The html tag tells the browser what it needs to display. Usually html tag consists of tag name surrounded by <> brackets.
+
+4. Brackets Installation : (Screen shot Ani)
+Animation flow (Google - type brackets download - click on link(brackets.io) - click on download - open the downloaded folder - right click - install - click on run - click on next - click on install - click on finish.)
+
+5. First html program in brackets(typing animation) : 
+
+<html>
+	<head>
+		<title>Chit Chat Corner</title>
+	</head>
+	<body>
+		<h1>Chit Chat Corner Specials</h1>
+		<h2>Pani Puri</h2>
+		<p>Round hollow puri, fried crisp and filled with a mixture of flavored pani, tamarind chutney, chili, chaat 		   	   masla, potato, onion and chickpeas.</p>
+		<h2>Masla Puri</h2>
+		<p>Crushed puris soaked in hot masla gravy made up of Puffed rice, green peas, chili powder, garam masla chaat 		masla, coriander powder, Topped with small slices of onions (optional), tomatoes, carrot shavings, coriander 			leaves and sev.</p>
+		<h2>Bhel Puri</h2>
+		<p> Puffed rice and sev,  mixed with potatoes, onions, Chat masla, chutney and mixture of fried snacks. 			Bhelpuri has a balance of sweet, salty, tart and spicy flavors, with different textures, including crispy and 			crunchy form of puffed rice and fried sev.</p>
+		<h2>Sev Puri</h2>
+		<p>Puri loaded with diced potatoes, onions, three types of chutneys: tamarind, chili and garlic, topped with 			sev. It is seasoned with raw mango or with a hint of lemon and chaat masla.</p>
+	</body>
+</html>
+
+6. Installing Indentator : (Screen shot Ani)
+Animation flow(Click on Extension manager - type Indentator - click on install - explain indentation - Cntrl + Alt + I)
+
+7. Live preview : 
+a) Show live preview by clicking the icon & show output.
+b) Show live preview by using the shortcut Cntrl + Alt + P & show output.
+c) Find the word masla using shortcut Cntrl + F.
+d) Replace the word masla into masala by using shortcut Cntrl + H.
+e) Show the output 
+
+8. Themes & Font settings : 
+a) Click on view
+b) Click on themes 
+c) In themes settings change it to Brackets Dark.
+d) We can change the font style & size.
+
+9. For script : Q. What browser am i supposed to be using?
+A. Use whatever browser you like, But in reality there are slight differences in the way browsers handle your pages.
+
+10. How does browser decide to display the html?
+A. Html tells your browser about the structure of the document : Where the headings are, Where the paragraphs are & so on.
+
+11. Why do we need the <html> tag?
+A. The <html> tag tells the browser our document is actually html.
+
+12. Is there any way to add comments in html? 
+A. Yes, If we place our text inbetween <!--text--> the browser will totally ignore them.
+
+13. Do the closing tag have to be in the same line?
+A. No, our tags can start & end anywhere on the same line or they can start & end on different lines.
+
+14. Can we have one tag inside other tags?
+A. Yes, We can have one tag inside another tag. For example : <head> & <body> are always present inside the <html> tag.
+
+15. COnfusion Alert : Q. I have noticed the html in some pages doesn't always match opening tags with closing tags
+A. Tags are supposed to match. In general, The browser considers only the opening tag if we write a incorrect html.
+
+16. Why do the closing tags have that extra "/" ?
+A. That "/" is there to differenciate between the opening & the closing tags or else they look similar.
+
+
+
+
+
+

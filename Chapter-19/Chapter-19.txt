@@ -1,0 +1,197 @@
+Chapter-19
+
+1. <div> tag in html : The <div> tag defines a division or a section in a html document, which is used to group together html elements & apply css styles to many element at once.
+
+Example : (ammus-kitchen latest output)
+
+Note : Here we have taken ammus kitchen webpage to show the example of <div> tag & we have divided that page into many sections. You can do the same for any of your webpages.
+
+a) The header division gets highlighted, which contains <img> & <h1>.
+b) Aloo paratha division gets highlighted, which contains <h1>, <img>, <p>, paratha ingredients division & paratha preparation division.
+c) Paratha ingredients division gets highlighted, which contains <h4> & <ol>.
+d) Paratha preparation division gets highlighted, which contains <h4> & <ul>.
+e) The same process repeats till the end.
+
+2. Adding <div> tag to faculty.html in topper-tutorials folder : 
+
+Let's divide the faculty.html page into two sections founder & faculties.
+
+a) Open faculty.html file.
+b) Add <div> to founder section.
+<div id="founder">
+            <h1>Founder</h1>
+            <img src="../images/rajkumar.png" width="200" height="200" alt = "Dr.Rajkumar">
+            <h4>Dr.Rajkumar</h4>
+            <p>Dr.Rajkumar, the founder of Topper Tutorials, armed with a vision of providing an academic environment that nurtured original thinking and created confident individuals he founded the Topper Tutorials in the year 2001.Being a fun loving person, he makes sure to spend time with his own children at home, listen to music & engage in different kinds of sports.</p>
+ </div>
+        
+c) Add <div> to faculties section : 
+<div id="faculties">
+            <h2 id ="faculty_members">Faculty members</h2>
+
+            <img src="../images/shankarnag.png" width="200" height="220" alt = "Shankarnag">
+
+            <h4>Prof.Shankarnag</h4>
+            <p>Prof.Shankarnag has been a faculty at Topper Tutorials since 2003.Outside of his responsibilities in the physics classroom and lab, he hosts sessions of physics to the young, observatory and voluntary students as a hobby.</p>
+
+            <img src="../images/vishnuvardhan.png" width="200" height="195" alt = "Dr.Vishnuvardhan">
+            <h4> Dr.Vishnuvardhan</h4>
+            <p>Dr.Vishnuvardhan, Professor at Topper Tutorials began teaching in 2001. He currently teaches general, analytical, inorganic chemsitry and laboratory glassblowing.  He enjoys helping students, to reach their academic potential.  </p>
+
+            <img src="../images/prabhakar.png" width="200" height="200" alt = "Prabhakar">
+            <h4>Asst.Prof.Prabhakar</h4>
+            <p>Mr.Prabhakar Assistant Professor of Mathematics at Topper Tutorials began teaching in 2003. He has particularly mastered in the mathematical theory of knots, their applications and their connections with hyperbolic geometry.</p>
+
+            <img src="../images/kashinath.png" width="200" height="180" alt = "Kashinath">
+            <h4>Kashinath PhD</h4>
+            <p>Prof.Kashinath, has been at Topper Tutorials since 2005. His teaching interests include plant systematics and genetics. Apart from biology, he advises in the areas of natural science, veterinary medicine, medical radiography and occupational therapy.</p>
+        </div>
+
+d) save.
+e) Show the output & explain.
+f) Open index.css file
+g) Add : #founder{
+    border-width: thin;
+    border-style: solid;
+   }
+h) Save.
+i) cam pans to faculty.html file.
+j) Show the output & explain.
+k) Cam pans to index.css.
+l) Add : padding : 20px;
+m) Save.
+n) cam pans to faculty.html file.
+o) Show the output & explain.
+p) Cam pans to index.css file.
+q) Add : line-height: 30px;
+   	 text-align: center;
+r) Save.
+s) cam pans to faculty.html file.
+t) Show the output & explain.
+u) Cam pans to index.css file.
+v) Add : #faculties{
+    			border-width: thin;
+    			border-style: solid;
+    			padding:20px;
+    			line-height: 40px;
+    			text-align: center;
+    		    }
+w) Save.
+x) cam pans to faculty.html file.
+y) Show the output & explain.
+
+3. Introducing the width property : The width property specifies the width of the element's content area.
+The width property of an element does not include paddings, margins & borders.
+
+Note : width of an entire element = width of content area + padding + border + margin.
+
+Example : (Calculate the entire width of an element with diagram)
+
+4. Adding width property to our faculties webpage : 
+
+a) Open index.css file.
+b) Add : #founder{
+			width:1000px;
+		}
+c) Save the file.
+d) Cam pans to index.html file.
+e) Show the output & explain. (There is more space on the right side, so lets add space on left side)
+f) Cam pans to index.css file.
+g) Add : margin-left : 270px;
+h) Save the file.
+i) Cam pans to index.html file.
+j) Show the output & explain.
+k) Cam pans to index.css file.
+l) Add : #faculties {
+			width : 800px;
+			}
+m) Save the file.
+n) Cam pans to index.html file.
+o) Show the output & explain
+p) Cam pans to index.css file.
+q) Add : margin-left : 365px; 
+r) Save the file. 
+s) Cam pans to index.html file.
+t) Show the output & explain. (lets add space between founder & faculties section)
+u) Cam pans to index.css file.
+v) Add : #faculties {
+			margin-top : 30px;
+			}
+w) Save the file.
+x) Cam pans to index.html file.
+y) Show the output & explain.
+
+5. Selecting descendants : (Show tree diagram of faculty.html file)
+
+a) We want to change the <h4> element color in the faculties section.
+b) In tree diagram highlight all <h4> elements in faculties.
+c) Open index.css file.
+d) Add : h4 {color : #983e91;}.
+e) Save the file.
+f) Open index.html file.
+g) Show the output & explain. ( The above rule affects the font color of <h4> element in faculties section & also founder section)
+h) Cam pans to index.css file.
+i) Add : #faculties h4 {color : #983e91;}.
+j) Save the file.
+k) pans to index.html file.
+l) Show the output & explain.
+
+6. Bullet points : 
+
+a) <div> elements are used to group related elements together into logical sections.
+b) Creating logical sections can help to identify the main content area, header & footer of your page.
+c) Use nested <div> elements to add further structure to your files.
+d) The width property sets the width of the content area of an element.
+e) The total width of an element is the width of the content area, plus the width of padding, border & margin you add.
+f) Text-align is a property for block elements that aligns all inline content in the block element to the center, right or to the left of that element.
+g) You can use descendant selectors to select elements nested within other elements.
+
+
+7. <div> acts like a container to keep all elements together?
+A. Yes. <div> element not only acts as logical container that you can use to hold a bunch of related elements together, but when your style <div> element & start using them for positioning, they act as graphical containers too.
+
+8. Beyond the structure i am already putting into my pages with headings & paragraphs and so on, should i also be adding a higher level of structure with <div>s ? 
+A. Yes and No. You want to add structure where it has a real purpose, but don't add structure for the sake of it. Always keep your structure as simple as possible.
+
+9. If i don't set the width of an element, then where does the width come from?
+A. The default width for a block element is "auto", which means that it will expand to fill whatever space is available.
+
+10. What if i don't have any margin, padding or borders?
+A. Then your content gets to use the entire width of the box.
+
+11. What are the different ways i can specify width?
+A. You can specify width in pixels or percentage.
+
+12. What about the height property?
+A. In general, the height of an element is kept as default which is auto & the browser expands the content area vertically, so that all the content is visible.
+
+13. Descendant usually means child, grandchild, great-grandchild. Hence we are just selecting the child descendants right?
+A. The selector "#faculties h4" means any descendants of faculties. So the <h4> could be a direct child of the <div> or nested inside an another <div> and so on. So descendant selector selects any <h4> nested inside an element, no matter how deeply it is nested.
+
+14. Do you ever put a <div> in a class instead of giving it an id?
+A. An element can have an id & be in one or more classes at the same time, so the choice is not mutually exclusive. And, yes, there are many times you create <div> & place them into classes.
+
+15. Is there a way to select a direct child?
+A. Yes. For example you could use "#faculties h4" to select <h4> only if it is the direct child of an element with an id of "faculties".      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

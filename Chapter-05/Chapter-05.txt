@@ -1,0 +1,220 @@
+Chapter-05
+
+1. Organizing Topper Tutorials : Let us give our topper tutorials website a meaningfull folder structure.
+
+a) Create a folder called topper-tutorials (appears with sparkle).
+b) Create a folder called staff (appears with sparkle).
+c) Create a folder called address (appears with sparkle).
+d) Create a folder called images (appears with sparkle).
+e) All html files & images (appear with sparkle one by one).
+f) Explain about root folder & branch folder in detail.
+g) Cam focus on folder names & html file names circle on it & explain about the standards.
+
+Note : The Root folder or Parent folder is the top level directory of the file system which contains the sub folder & its files.
+
+If a directory or a folder is stored inside an another folder it is termed as branch folder or sub directory.
+
+At the top it represents a root folder & each path down to a file or a folder represents a branch folder.
+
+2. Arranging the files & folder structure for topper-tutorial website
+
+a) Create the topper-tutorials folder & create three new subfolders by name 'staff', 'address' & 'images'.
+b) Move the file faculty.html into the staff folder.
+c) Move the file location.html into the address folder.
+d) Move all the images into the images folder.
+e) Leave the index.html page in topper-tutorials folder.
+
+3. Technical Errors : (Screen shot Ani)
+
+a) Open the page index.html.
+b) Run the file by clicking live preview.
+c) Show the output.
+d) Cam focus on errors (Broken image).
+e) Click on the link our faculty, In the output show the error (Cannot GET/faculty.html).
+f) Click on the link locate us in the output show the error (Cannot GET/location.html).
+g) Back to index.html focus on <img src = "topper-tutorials-logo.png">, <img src = "font.png"> & <img src = "youth.png"> circle on it one by one.
+h) Cam pans to <a href = "faculty.html">Our faculty</a> circle on it.
+i) Cam pans down & foucus on <a href = "location.html">Locate Us</a> circle on it & zoom back.
+j) To solve all the above problems, Trace the path from our page to the destination file.
+
+4. Introduction to relative path : A relative path is link that refers to the location which points to other files on our website relative to the web page from which we are linking. 
+
+There are two different ways to represent a relative path : 
+
+a) <a href = "folder name/file name.html">Label</a> : '/' Which represents seperation, Label it can be word or an image that you see on web page by default it is underlined.
+
+b) <a href = "../file name.html">Label</a> : '..' represents a root folder.
+
+Note : To figure out a relative path for your links you have to start from the page that has the link & then you trace a path through your folders & till you find the file that you need to point to.
+
+5. linking the broken images in our index.html :
+
+<html>
+    <head>
+    <title>Topper Tutorials</title>
+        <style type="text/css">
+        
+            body{ 
+            border: 4px double #379a33;
+            padding: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 20px;
+            font-family:sans-serif;
+            background-color:lavender;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/topper-tutorials-logo.png" width="200" height="200">
+        <img src="images/font.png" width="800" height="120">
+        <h2>"Right place for Bright Future"</h2>
+        <img src="images/youth.png" width="600" height="280">
+        <p>Topper Tutorials works towards "Nurturing Success of Every Student" through a friendly academic environment, supported by technology, which is built around a culture of caring.</p>
+        
+        <p>We achieve what we do through constant mentoring & observation. At the end of the course, our students will be fully enabled to do well in both board exams & competitive exams.</p>
+        
+        <h3>Our Faculty</h3>
+        <p>An institution is only as good as its teachers are. <a href="staff/faculty.html">Our faculty</a> members challenge their students, share insights gained through professional experience & communicate the knowledge they have acquired over the years through pure determination & grit. They are very supportive of their students in the classrooms & in the labs. <a href="address/location.html">Locate Us.</a> </p>
+        
+    </body>
+</html> 
+
+a) Focus on <img src = "topper-tutorials-logo.png"> & change it to <img src = "images/topper-tutorials-logo.png"> zoom back & show the output (Type Ani).
+b) Focus on <img src = "font.png"> & change it to <img src = "images/font.png"> (Type Ani).
+c) Cam pans down & focus on <img src = "youth.png"> & change it to <img src = "images/youth.png"> zoom back & show the output (Type Ani).
+
+6. Adding a relative path to our 'index.html' & 'faculty.html' : 
+
+a) In our index.html focus on <a href = "faculty.html">Our faculty</a> & change it to <a href = "staff/faculty.html">Our faculty</a> zoom back & show the output (Type Ani).
+b) In the output click on the link Our faculty show the output as broken images.
+
+7. Adding a relative path to our 'index.html' & 'location.html' : 
+
+a) In our index.html focus on <a href = "location.html">Locate Us</a> & change it to <a href = "adress/location.html">Locate Us</a> zoom back & show the output (Type Ani).
+b) In the output click on the link Locate Us show the output.
+
+8. Linking the broken images in our 'faculty.html' :
+
+<html>
+    <head>
+        <title>Faculties</title>
+        <style type="text/css">
+
+            body{ 
+                border: 4px double #379a33;
+                padding: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 20px;
+                font-family:sans-serif;
+                background-color:lavender;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Founder</h1>
+        <img src="../images/rajkumar.png" width="200" height="200">
+        <h4>Dr.Rajkumar</h4>
+        <p>Dr.Rajkumar, the founder of Topper Tutorials, armed with a vision of providing an academic environment that nurtured original thinking and created confident individuals he founded the Topper Tutorials in the year 2001.Being a fun loving person, he makes sure to spend time with his own children at home, listen to music & engage in different kinds of sports.</p>
+
+        <h2>Faculty members</h2>
+        <img src="../images/shankarnag.png" width="200" height="220">
+        <h4>Prof.Shankarnag</h4>
+        <p>Prof.Shankarnag has been a faculty at Topper Tutorials since 2003.Outside of his responsibilities in the physics classroom and lab, he hosts sessions of physics to the young, observatory and voluntary students as a hobby.</p>
+
+        <img src="../images/vishnuvardhan.png" width="200" height="195">
+        <h4>Dr.Vishnuvardhan</h4>
+        <p>Dr.Vishnuvardhan, Professor at Topper Tutorials began teaching in 2001. He currently teaches general, analytical, inorganic chemsitry and laboratory glassblowing.  He enjoys helping students, to reach their academic potential.  </p>
+
+        <img src="../images/prabhakar.png" width="200" height="200">
+        <h4>Asst.Prof.Prabhakar</h4>
+        <p>Mr.Prabhakar Assistant Professor of Mathematics at Topper Tutorials began teaching in 2003. He has particularly mastered in the mathematical theory of knots, their applications and their connections with hyperbolic geometry.</p>
+
+        <img src="../images/kashinath.png" width="200" height="180">
+        <h4>Kashinath PhD</h4>
+        <p>Prof.Kashinath, has been at Topper Tutorials since 2005. His teaching interests include plant systematics and genetics. Apart from biology, he advises in the areas of natural science, veterinary medicine, medical radiography and occupational therapy.</p>
+        <p><a href = "../index.html">Back to Home</a></p>
+    </body>
+</html>
+
+a) In 'faculty.html' focus on <img src = "rajkumar.png"> change it to <img src = "../images/rajkumar.png"> (Type Ani) Show the output. 
+b) focus on <img src = "shankarnag.png"> change it to <img src = "../images/shankarnag.png"> (Type Ani).
+c) focus on <img src = "vishnuvardhan.png"> change it to <img src = "../images/vishnuvardhan.png"> (Type Ani).
+d) focus on <img src = "prabhakar.png"> change it to <img src = "../images/prabhakar.png"> (Type Ani).
+e) focus on <img src = "kashinath.png"> change it to <img src = "../images/kashinath.png"> (Type Ani) zoom back & show the output.
+
+9. Adding a label (Back to Home) inside our file 'faculty.html' & creating a link from 'faculty.html' to 'index.html'.
+
+a) In faculty.html inside the <body> tag at the last add <p> tag <a href = "../index.html">Back to Home</a></p> (Type Ani).
+b) Show output & click on the link Back to Home & show output.
+
+
+10. Adding a label (Back to Home) inside our file 'location.html' & creating a link from 'location.html' to 'index.html'.
+
+<html>
+<head>
+    <title>Location</title>
+    <style type="text/css">
+        body{
+            padding: 10px;
+            font-size: 20px;
+            font-family:sans-serif;
+            background-color:lavender;
+            }
+    </style>
+    </head>
+<body>
+    <h1>Address</h1>
+    <p>#320, 1st Floor, 4th main,<br> 5th cross, Near Kanishka Hotel, <br>Gandhi Nagar, Banglore-560009.</p>
+    <p><a href = "../index.html">Back to Home</a></p>
+    </body>
+</html>
+
+a) In location.html inside the <body> tag at the last add <p> tag <a href = "../index.html">Back to Home</a></p> (Type Ani).
+b) Show output & click on the link Back to Home & show output.
+
+11. Bullet points : 
+
+a) '..' represents root folder use to link your files that's one folder above the file your linking from.
+b) '/' (forward slash) is use for seperation.
+c) We will get a broken image on our web page, when the path to an image is incorrect.
+d) Don't use spaces in the file name & folder names you choose for your website.
+e) It's good idea to organise your website folder structure before building your website, so there is no need of changing a bunch of paths later when the website grows.
+
+12. Mini Assignment : Create a new folder called images to our chit-chat-corner.html & move all the images to images folder, Add a relative path for our chit-chat-corner.html
+
+13. What is the use of '..' ?
+A. We use '..' when we need to tell the browser that the file which we are linking is in the root folder.
+
+14. What do you do if you need to go up two folders instead of just one?
+A. We use '../..' to go up two folders instead of just one folder.
+
+15. Is there a limit to how far up we can go?
+A. We can go up until we are at the root of our website. In our example the root was topper-tutorials folder so we could only go up as far as topper-tutorials folder.
+
+16.
+ Our operating system uses '/' (forward slash) as a seperator can we use a '\' (back slash) ?
+A. No, Don't use '\' (back slash) because various operating system use different files seperators but when it comes to web browser we pick up a common seperator that is '/' (forward slash) for our html, Whether you use Mac, Windows or Linux operating system. 
+
+17. Since you have folder for your images why not have another one called "html" & put all the HTML in that folder?
+A.  Yes you can create folder called as HTML, But we don't recommend that as what we have shown is a Industry Standard which is followed.
+
+18. Why can't we have images folder in each other folder, Like "address" & "staff"?
+A.  As keeping all the images in the root folder itself is an industry standard we cannot have images folder in other folders like "address" & "staff".
+
+19. Is there a limit to how far down we can go?
+A.  In general you can go down how much ever you want to but in reality you can go down till the last branch folder. But we don't recommend that when you have that many folder levels, It means your website organization is too complicated. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+

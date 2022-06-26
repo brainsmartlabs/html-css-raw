@@ -1,0 +1,126 @@
+Chapter-25
+
+1. Introduction to HTML5 : HTML5 is a markup language used for structuring & presenting content on the World Wide Web(WWW).
+It is the fifth & current major version of the HTML standard & was published in 2014 by the World Wide Web Consortium(W3C).
+The new basic HTML5 elements are :
+a) <header>
+b) <footer>
+c) <time>
+d) <nav>
+e) <section>
+
+2. 
+a) <header> : The HTML <header> element represents typically a group of introductory contents. It may contain some heading elements & also elements like a logo or an image etc. It is a replacement for <div id = "header">.
+b) <footer> : The HTML <footer> element is used to define the footer of a HTML document or section. Footers usually contain information such as the author of the document, information related to copyrights & links to related documnts. It is a replacement for <div id = "footer">.
+c) <time> : The HTML <time> element is used to represent the 'datetime' attribute, which translates dates into machine-readable format.
+d) <nav> : The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.
+e) <section> : The <section> element represents a generic section of a document or an application.
+
+3. Updating the chit-chat-corner HTML : 
+a) Open index.html file in chit-chat-corner folder.
+b) Remove <div> tag for header : <div id = "header">
+				 ------------------
+				 ------------------
+			 	 </div>
+c) Add <header> tag for header : <header>
+				 ------------------
+				 ------------------
+			 	 </header>
+d) Remove <div> tag for footer : <div id = "footer">
+				 ------------------
+				 ------------------
+			 	 </div>
+e) Add <footer> tag for footer : <footer>
+				 ------------------
+				 ------------------
+			 	 </footer>
+f) Save the file.
+
+4. Updating CSS for the new elements :
+a) Open index.css file.
+b) Change the selector '#header' to 'header'.
+c) Change the selector '#footer' to 'footer'.
+d) Save the file.
+e) Show the output & explain.
+
+5. Adding the <section> element : 
+a) Open index.html file.
+b) Remove : <div id = "chat-image">
+	    -----------------------
+	    -----------------------
+	    </div>
+c) Add : <section id = "chat-image">
+	    -----------------------
+	    -----------------------
+	 </section>
+d) Save the file.
+e) Show the output & explain.
+
+6. Adding the <nav> element :
+a) Open index.html file.
+b) Add <a> element below the header :
+	<a href = "index.html">HOME</a>
+	<a href = "menu.html">MENU</a>
+	<a href = "location.html">LOCATION</a>
+c) Add unordered list element around the <a> element : 
+	<ul>
+		<li><a href = "index.html">HOME</a></li>
+		<li><a href = "menu.html">MENU</a></li>
+		<li><a href = "location.html">LOCATION</a></li>
+	</ul>
+d) Add <nav> element around <ul> : 
+	<nav>
+		<ul>
+			<li><a href = "index.html">HOME</a></li>
+			<li><a href = "menu.html">MENU</a></li>
+			<li><a href = "location.html">LOCATION</a></li>
+		</ul>
+	</nav>
+e) Save the file.
+f) Show the output & explain.
+
+7. Adding style for <nav> element : 
+a) Open index.css file.
+b) Add : 
+	nav {
+		background-color : #ffbeba;
+		margin : 10px 10px 0px 10px;
+	 }
+
+	nav ul {
+		margin : 0px;
+		padding : 5px 0px 5px 0px;
+	  }
+
+	nav ul li {
+			display : inline;
+			padding : 5px 10px 5px 10px;
+		}
+
+	nav ul li a {
+			text-decoration : none;
+			font-weight : bold;
+		}
+c) Save the file.
+d) Show the output & explain.
+
+8. Bullet Points :
+a) HTML5 added several new elements to HTML.
+b) <section> is for grouping related content.
+c) <nav> is for grouping site navigation links.
+d) <header> groups content such as headings & logos that typically go at the top of a page or section.
+e) <footer> groups content such as document imformation & copyright that typically go at the bottom of a page or a section.
+f) <time> is also a new element in HTML5. It is used to markup times & dates.
+g) <div> is still used for structure. It is often used to group elements together for styling purposes or to create structure for content that doesn't fit into one of the new structure-related elements in HTML5.
+
+9. What is the difference between a <section> & a <div>?
+A. <div> is used to add an element, so you can style the page whereas <section> is used to add an element to markup content that forms a well defined section of related content.
+
+10. Should we use <header> only when we have got more than one thing to put in it? What if we have only got one heading & nothing else?
+A. You can use <header> even if you have only one heading to put in it. The <header> element provides extra semantic meaning that separates the header of a page or a section from the rest of the content. However, its not required that you always put your heading content in a <header> element.
+
+11. We are doing a lot of work to add elements to the page, & it looks exactly the same as it did before. Tell me again what all this is getting me?
+A. We have replaced a few elements & added a few elements, & in the process, we have added a lot of meaning to our pages. The browser, search engines & applications for building webpages, can- if they want- be a lot smarter about how they handle different parts of your page. & your page is easier for you, & other web developers, to read. Eventhough your page looks the same, its a lot more meaningful under the covers.
+
+12. Should every <section> & every <article> always have a <header>?
+A. Most of the time, your <section>s & <article>s will have a <header>, or atleast a heading. Think about it : Content within an <article> element can be reused elsewhere, so chances are, that content will need a header for discriptive for introduction purposes. Likewise, content with a <section> element is a group of related content in your page, so it will typically have some kind of header to separate & introduce that section of content.

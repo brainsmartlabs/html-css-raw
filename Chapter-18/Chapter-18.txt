@@ -1,0 +1,163 @@
+Chapter-18
+
+1. Introducing the line height property : the line height property allows you to specify the amount of vertical space between each line of text.
+
+You can specify the line height line in pixels, em or percentage.
+
+Example : line-height : 15px;
+
+Let's add line-height property to our topper-tutorials page : 
+
+a) Opent index.css in topper-tutorials folder.
+b) Add : body {line-height : 60px;}.
+c) Save the file.
+d) Open index.html file.
+e) Show the output.(there is lot of space between each line, so lets reduce it)
+f) Cam pans to index.css.
+g) Change the line-height : 40px; & save it.
+h) Show the output & explain.
+
+2. Introducing the background image property : You can add background image to any element by using the background-image property in css, which improves the attractiveness of your page.
+
+Example : background-image : url(images/youth.png);
+
+The background-image is set to url, which can be a relative path or full url & no quotes are required around the url.
+
+Note : <img> is a html tag & is used to display the image on a webpage.
+
+background-image is a css property & is used to set the background image.
+
+3. Two other properties affecting the background image : 
+a) background-position.
+b) background-repeat.
+
+a) background-position : the background-position property sets the position of an image, which can be specified in px, percentage or keywords like top, bottom, left, right & center.
+
+Ex : backgroun-position : top;
+
+b) background-repeat : The background-repeat property is used to control how the background image repeats.
+
+Note : By default the background-image is repeated both horizontally & vertically to fill the background space. 
+
+Example : background-repeat : repeat; (This is the default behavior)
+
+The other values related to background-repeat property are : 
+
+no-repeat : display the image once & don't repeat it.
+repeat-x : repeat the image only horizontally.
+repeat-y : repeat the image only vertically.
+inherit : inherit the parent value.
+
+4. Adding a background image to our topper-tutorials webpage.
+
+a) Open index.css file.
+b) Add : p.bright {background-image : url(../images/bright-sun.png);}
+c) Save the file.
+d) Cam pans to index.html file.
+e) Show the output & explain. (image is repeated both horizontally & vertically inside the box model)
+f) We don't want the image to be repeated, so lets change it by using the background-repeat property.
+g) Cam pans to index.css file.
+h) Add : background-repeat : no-repeat;
+i) Save the file.
+j) Show the output & explain. (Now we get the image only once & is by default positioned at the top left inside the box)
+k) The bright-sun image doesn't match on the background color of the box, so lets change the background color.
+l) Cam pans to index.css file.
+m) Add : background-color : #426aaa;
+n) Save the file.
+o) Show the output & explain.(Now the text color doesn't look good on that background, so lets change the font-color)
+p) Cam pans to index.css 
+q) Add : color : white;
+r) Save the file.
+s) Show the output & explain. (Lets change the border-style to dashed, so that it gives our page a more attractive look)
+t) Cam pans to index.css file.
+u) Add : border-style : dashed;
+v) Save the file.
+w) Show the output & explain.
+
+5. Understanding the 'id' attribute : The id attribute specifies a unique id for the html element. To select an id element, we have to use '#' symbol infront of the id name in our '.css' file.
+
+Difference between class & id attributes : 
+
+class
+a) They are not unique.
+b) We can use multiple classes for the same element.
+c) We can use the same class name for multiple elements.
+
+id
+a) They are unique.
+b) Each element can have only one id.
+c) Each page contain only one element with the one id name.
+
+6. Changing from the class attribute to an id attribute in our index.html : 
+
+a) Open index.html file.
+b) Change the class to id attribute
+<p id = "bright"> </p>
+c) Save the file.
+d) Open index.css file.
+e) Change the class to id selector.
+#bright{
+        color:white;
+        font-size:27px;
+        font-family:cursive;
+        border-style:dashed;
+        border-color:black;
+        border-width: 2px;
+        padding-left:28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        background-color: #426aaa;
+        margin-right: 680px;
+        margin-left: 20px;
+        background-image: url(../images/bright-sun.png);
+        background-repeat: no-repeat;
+   }
+f) Save the file.
+g) Cam pans to index.html.
+h) Show the output & explain.
+
+7. Bullet points :
+
+a) Use the line-height property to add space between lines of text.
+b) You can place an image the background of an element with the background image property.
+c) An element's background will show under the content & the padding, but not under the margin.
+d) Use the id attribute to give an element a unique name & to provide a unique style for that element.
+e) An element can have only one id, but it can belong to many classes.
+
+8. Why do i need an 'id' to prove something is unique on the page? i could use a class exactly the same way, right?
+A. You can replace a unique id with a class, but there are many reasons not to do that. For example you are working on a web project with a lot of people & you are going to use a class attribute instead of id. One of your teammate looks at a class & he thinks that it can be reused with other elements.
+
+9. Can an element have a an id & also belong to a class?
+A. Yes, it can. An id is just an unique identifier for an element, but that doesn't prevent it from belonging to one or more classes.
+
+10. Why did you make the selector #bright rather than p#bright?
+A. They both would select the same thing. However, on a more complex set of pages, you might have some pages where the unique id is assigned, say, paragraph on one page and on another page the same id is assigned to a list. So instead of writing several rules in css(p# id name, li# id name) you can use only one rule as # id name.
+
+11. Should i always start with a class & then change it to an id when i know its going to be unique?
+A. No. You will often know when you design your pages if an element is going to be unique or not. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

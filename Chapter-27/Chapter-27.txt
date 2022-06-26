@@ -1,0 +1,85 @@
+Chapter-27
+
+1. Introducing 'rowspan' attribute : The rowspan attribute in HTML specifies the number of rows a cell should span.
+The rowspan attribute can be used in <th> & <td> elements.
+
+Example : <th rowspan = "2">---------</th>
+	  <td rowspan = "3">---------</td>
+
+2. Introducing 'colspan' attribute : The colspan attribute in HTML specifies the number of columns a cell should span.
+Similar to the rowspan the colspan attribute can be used in <th> & <td> elements.
+
+Example : <th colspan = "2">---------</th>
+	  <td colspan = "3">---------</td>
+
+3. Adding rowspan attribute to our index.html
+a) Open index.html file.
+b) Cam focus on 3rd row.
+c) Add : <td rowspan = "2">Hyderabad</td>.
+d) Save the file.
+e) Show the output & explain.
+f) Cam pans to index.html file.
+g) Cam focus on 7th row.
+h) Add : <td rowspan = "2">Chandigarh</td>.
+i) Save the file.
+j) Show the output & explain.
+
+4. Nested tables in HTML : A Nested Table is one table placed inside of another, where the larger table functions as a container for the smaller one.
+By default, the Nested Table carry the same styles of the main table, until we specifically add the styles for Nested Table.
+Nested Tables in HTML are straightforward, all we need to do is put another <table> element inside a <td> to create the same.
+
+5. Adding a Nested table to our existing table : 
+a) Open index.html file.
+b) Cam focus on 3rd row.
+c) Add : 
+	<td>
+	    <table>
+		<tr>
+		    <th>AP</th>
+		    <td>4,97,80,777</td>
+		</tr>
+		<tr>
+		    <th>Hyderabad</th>
+		    <td>97,57,145</td>
+		</tr>
+	    </table>
+	</td>
+d) Save the file.
+e) Show the output & explain.
+
+6. Adding styles for the Nested Table :
+a) Open index.css file.
+b) Add :
+	table table {
+		width : 250px;
+		height : 80px;
+	    }
+c) Save the file.
+d) Show the output & explain.
+e) Cam pans to index.css file.
+f) Add : 
+	table table {
+		margin-left : 50px;
+	   }
+g) Save the file.
+h) Show the output & explain.
+
+7. Mini Assignment : Create a table in Topper Tutorials webpage, which contains the following data
+
+(draw a table with headings as seen in topper-tutorials page)
+
+8. Mini Assignment : Add styles for the created table.
+
+9. Bullet Points :
+a) If you have no data for a data cell, put no content into the <td> element. You need to use a <td>.....</td> element to maintain the alignment of the table.
+b) If your data cell needs to span multiple rows or columns, we can use the rowspan or colspan attributes of the <td> element.
+c) You can nest tables within tables by placing the <table> element & all its content inside a data cell.
+
+10. You said you can have table data span columns too?
+A. You sure can. Just add a colspan attribute to your <td> element & specify the number of columns. Unlike the rowspan, when you span columns, you remove table data elements that are in the same row.
+
+11. Can I have a colspan & rowspan in the same <td>?
+A. You sure can. Just make sure you adjust the other <td>s in the table to account for both the row & column spans. In other words you will need to remove the corresponding number of <td>s from the same row, & from the column.
+
+12. Do you really think these rowspans look better?
+A. Well, they certainly reduce the amount of information in the table, which is usually a good thing. &, if you look at a few tables out there in the real world, you will find that rowspans & colspans are quite commom, so its great to be able to do them in HTML. But if you liked the table better before feel free to change your HTML & go back to the previous version.

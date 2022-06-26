@@ -1,0 +1,115 @@
+Chapter-20
+
+1. <span> in HTML : The <span> tag is used to group inline elements in a document for styling purpose.
+
+<span> is very much like a <div> element, but <div> is a block-level element, whereas a <span> is an inline element.
+
+Example : <p>Right place for<span>Bright future</span> </p> (in HTML file).
+
+span {font-weight : bold;} (in CSS file)
+
+2. Adding spans to our faculty.html page in topper-tutorials folder : 
+
+a) Open faculty.html file.
+b) Add : <h4><span class = "designation"> Dr. </span> <span class = "name"> Rajkumar</span></h4>
+c) Save the file.
+d) Show the output & explain.
+e) Open index.css file.
+f) Add : .designation {font-style : italic;}
+.name {font-weight : bolder;}
+g) Save the file.
+h) Cam pans to index.html file.
+i) Show the output & explain. (Explain about different styles in an inline element)
+j) Cam pans to faculty.html file.
+k) Add : <h4><span class = "designation"> Prof. </span> <span class = "name"> Shankarnag</span></h4>
+l) Save the file.
+m) Cam pans to index.html file.
+n) Show the output & explain.
+o) Same process repeats for all <h4> elements in faculty.html
+
+3. Introducing pseudo-classes : A pseudo-class is a keyword added to a selector that specifies a special state of the selected elements.
+
+A pseudo-class acts like a class, but it is not an actual class.
+
+Example : 
+
+:visited - Represents a link that the user has already visited.
+:link - Represents a link that has not yet been visited.
+:hover - It is generally triggered when the user hovers over an element with the mouse pointer.
+
+4. Adding pseudo-classes to our topper-tutorials webpage : 
+
+a) Open index.html file & show the output (Explain about the default color of the link)
+b) Open index.css file.
+c) Add : 
+a:link{color : #280ba3;}
+d) Save the file.
+e) Open index.html file.
+f) Show the output & explain. (The above rule applies color to unvisited links)
+
+5. Adding pseudo-class :visited
+
+a) index.html output page is present.
+b) Click on the link our faculty.
+c) Click on the link Back to home.
+d) Explain about the default color of the visited link.
+e) Open index.css file
+f) Add :
+a:visited{color : #275809;}
+g) Save the file.
+h) Open index.html file.
+i) Show the output.
+j) Click on the link our faculty.
+k) Click on the link Back to home.
+l) Explain about the changed color of the visited link our faculty.
+
+6. Adding pseudo-class :hover
+
+a) index.html output page is present.
+b) Place the mouse pointer on the link our faculty.
+c) Explain about no color change.
+d) Open index.css file.
+e) Add :
+a:hover{color : #cc0a0a;}
+f) Save the file.
+g) Open index.html file.
+h) Show the output.
+i) Place the mouse pointer of the link out faculty.
+j) Explain about the color change.
+
+7. Bullet points :
+
+a) The <span> in inline element is similar to the <div> element : It is used to group together related inline elements & text.
+b) Just like <div>, you can add <span> elements to classes or give <span> elements unique ids to style them. 
+c) You can style each states of <a> element separatly with pseudo-classes. The pseudo-classes are used most often with the <a> element are :link for unvisited links, :visited for visited links & :hover for the hover state.
+d) Additional pseudo-classes are - :active, :focus, :first-child & :last child etc.
+
+8. When do i use a <span> rather than another inline element like <em> or <strong>?
+A. If what you really want is to change the style of certain words, then you should use a <span> & put your <span> elements into appropriate classes to group them & style them together.
+
+9. Can i set property like width on <span> elements?
+A. You can set the width of inline elements like <span>, <em> etc. But you won't notice any effect until you positioned them.
+
+10. What happens if i just style the <a> element like a normal element? Like : a{color : red;}
+A. You certainly can do that, but then your links will look the same in all states, which makes your  links less user-friendly.
+
+11. Can't my links be in multiple states at the same time? For instance, my link could be visited, have the mouse hovering over it & the user could be actively cliking on it all at once.
+A. They sure can. You determind which style is applied by the ordering of your rules. So, the right ordering is generally considered to be : link, visited, hover, focus & then active. If you use that ordering, you will get the results you expect.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

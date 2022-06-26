@@ -1,0 +1,288 @@
+Chapter- 15
+
+1. What is a font family?
+A. A font family is a group of fonts that have a common design.
+
+Fonts within a family differ from each other in style.
+
+There are five generic font families : (In table)
+
+Serif : Times, Times New Roman, Georgia.
+
+Sans-serif : Arial, Verdana, Tahoma.
+
+Monospace : Courier, Courier New, Consolas.
+
+Cursive : Comic sans, Brush Script MT, Cartoon.
+
+Fantasy : Impact, LAST NINJA, Papyrus.
+
+(Give explanation with images) 
+
+a) Serif : The serif family includes fonts with 'serifs'. Serifs are the extra designs or strokes at the ends of the letters. These fonts have an elegant & traditional look.
+
+These fonts are generally used to print News/Ads in Newspapers, Magazines etc..
+
+b) Sans-serif : The Sans-serif family includes fonts without 'serifs'. These fonts have a very clean look and are usually considered more readable on Digital screens than 'Serif fonts'.
+
+c) Monospace : The Monospace family is made up of fonts that have equal width between each characters in a word. Monospace fonts feel like they were typed on a typewriter.
+
+These fonts are primarily used to show software code examples.
+
+d) Cursive : The Cursive family includes fonts that look handwritten.
+
+These fonts are occationally used as headings in webpages. Or to give some text hand written feel.
+
+f) Fantasy : The Fantasy font family contains stylized decorative fonts.
+
+These fonts are generally used for logos or letterforms in webpages.
+
+2. Font-family specifications in CSS : We can specify more than one font by using the font-family property. All fonts should be of the same family.
+
+Always put a generic font-family name at the end.
+
+Example : body {
+		 font-family : Verdana, Tahoma, Arial, Sans-serif;
+		}
+
+a) The browser checks if the font verdana is available on the user's computer & if so, uses it as the font for this element.
+
+b) If Verdana isn't available, then checks for the font Tahoma. If it is available, uses it for the body.
+
+c) If Tahoma isn't available, then checks for the font Arial. If it is available, uses it for the body.
+
+d) Finally if none of the specific fonts can be found, it uses the default 'Sans-serif' font.
+
+3. For Script : Just as we have taught you in the previous chapter create a new index.css file in css folder & link it to index.html file inside ammus-kitchen folder.
+
+4. Adding new fonts to index.css file inside css folder : 
+
+a) body {
+	 font-family : Verdana, Tahoma, Arial, Sans-serif; 
+        } 
+Add the above style using text animation.
+
+b) Show the output & explain.
+
+5. Resizing font-size in css file : 
+
+There are different ways to specify a font-size in css they are : 
+
+a) Px (Pixel)
+b) % (Percentage)
+c) em
+d) keywords
+
+a) Px(pixel) : If we have to specify our font-size in pixels, in css we have to mention pixels as a number followed by "Px".
+
+Example : font-size : 20px;
+
+Here we are telling the browser that the font-size should be 20 pixels in height.
+
+b) % (Percentage) : A font-sized specified as a percentage tells the browser how big it should be relative to another font-size.
+
+Example : body {
+	 	font-size : 20px; 
+        	} 
+
+	h1 {
+		font-size : 200%;
+	   }
+The above example says that, h1 font-size should be 200% greater than the body font-size.
+
+c) em : We can also specify the font-size using em, which is also a relative unit of resource similar to %.
+
+Example : body {
+		 font-size : 20px;
+		}
+
+	h2 {
+		font-size : 1.5em;
+	   }
+In this example the h2 size should be 1.5 times of 20px, which is 30px.
+
+Note : Don't specify a '%' with 'em' because both are relative unit of measure.
+
+Don't mix 'em' with <em> element. Both are different.
+
+d) Keywords : Another way to specify the font-size is by using keywords.
+
+The various keywords are : xx-small, x-small, small, medium, large, x-large, xx-large.
+
+Example : body {
+		 font-size : small;
+		}
+
+Note : 'small' is usually defined around 12px in height, each size is about 20% larger than the previous one.
+
+6. Adding different font-size to our index.css :
+
+	body {
+		 font-size : 20px;
+		}
+	
+	h1 {
+		font-size : 200%;
+	   }
+
+	h2 {
+		font-size : 150%;
+	   }
+
+	h4 {
+		font-size : 110%;
+	   }
+
+a) Add all the above styles using type animation.
+b) Save the file.
+c) Open index.html file & show the output.
+d) Explain all the changes by focusing on it.
+
+7. Introducing font-weight property : 
+
+The font-weight property allows you to control how bold/light the text looks.
+
+Example : font-weight : bold;
+
+Other values relative to font-weight property are : lighter, normal, bolder.
+
+Note : we can also set the values for font-weight property to a number between 100 to 900.
+
+Adding font-weight property to our index.css : 
+
+a) Open index.css file.
+b) Add h4 {
+	    font-weight : normal;
+	  } 
+c) Save the file.
+d) Open index.html & show the output.
+e) Explain about the changes.
+
+8. Introducing font-style property : Italic and oblique styles are two styles that gives font a slanted appearance. 
+
+The italic text is slanted to the right and has extra curls on the serif.
+
+Example : font-style : italic;
+
+The regular letters are slanted to the right but doesn't have any curls on the serif in the oblique style.
+
+Example : font-style : oblique;
+
+Note : All fonts doesn't support italic style. In that case we get oblique text.
+
+Adding font-style property to our index.css : 
+
+a) Open index.css file.
+b) Add q {
+	    font-style : italic;
+	  } 
+c) Save the file.
+d) Open index.html & show the output.
+e) Explain about the changes.
+
+9. Adding web fonts to our page : Web fonts are used to deliver new fonts directly to our client's system. As we can't control what fonts are installed on our client's PC, this method of delivering web fonts directly to their system is considered very useful.
+
+Another advantage of using this method is that, all the browsers would display the content in the same manner.
+
+(Screen shot animation)
+
+a) In google type www.google.com/webfonts
+b) Google fonts window will open (Explain about fonts).
+(For our webpage we are using 'Merienda One'. You can use whichever font is suitable for your webpage)
+c) Click on search bar & type 'Merienda One'.
+d) Click on search (font appears).
+e) Select(+)symbol & click on it.
+f) The font family window will appear explain about it.
+g) Copy the link "<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">".
+h) Cam pans to index.html file.
+i) Cam focus on <head> tag & paste the copied link inside of it.
+j) Save the file.
+k) Cam pans to google fonts page.
+l) Copy the style(font-family: 'Merienda One', cursive;)
+m) Cam pans to index.css file.
+n) Cam focus on h1 & paste the copied file.
+o) Save the file.
+p) Cam pans to index.html file.
+q) Show the output & explain.
+
+10. Bullet points :
+
+a) CSS gives you lots of control over the look of your fonts, including properties like font-family, font-weight, font-style & font-size.
+b) A font-family is a set of fonts that share common characterstics.
+c) Generic font-families are : Serif, Sans-serif, Monospace, Cursive & Fantasy.
+d) The fonts that your visitors will see in your webpage depend on the fonts they have installed on their own computers unless they use web fonts.
+e) Always make the last font a generic font, so that browser can make an appropriate substitution if no other fonts are found.
+f) Font-sizes are usually specified using px, em, % and keywords.
+g) You can make your text bold/light by using the font-weight css property.
+h) The font-style property is used to create italic/oblique text. Both the texts are slanted by default.
+
+11. How do we specify a font with multiple words the name like Courier New?
+A. Just put quotes around the name in your font family declaration with a space inbetween the words.
+Ex : font-family : "Courier New", Courier;
+
+12. The font-family property is really a set of alternative fonts?
+A. Yes. Its basically a priority list of the fonts. The first is the font you would like to use, followed by a good substitute, followed by more substitutes and so on. At the last you should specify the generic font-family name.
+
+13. Are "Serif" and "Sans-serif" real fonts?
+A. "Serif" and "Sans-serif" are not the names of actual fonts. However, your browser will substitute a real font in place of "Serif" or "Sans-serif" if the other fonts before it in the font-family declaration can't be found.
+
+14. What should i do to make sure all my users get to view the same font that i have used?
+A. If you follow the steps what we have taught and use any of the google web fonts in your html page you can be sure that all your users will get to view the same font that you have used.
+
+15. Are there any disadvantages of using web fonts?
+A. The only disadvantage is, it takes time to retrieve web fonts from their respective locations which affects the performance of your web page.
+
+16. What is the advantage of difining the font-size in <body> element?
+A. the advantage of difining the font-size in <body> element is, it acts as a parent element upon which you can difine the font size of all other elements.
+
+17. If i don't specify any font-sizes, don i just get the default font-sizes?
+A. Yes and those sizes will depend on your browser but, in most cases the default body font size will be 16px.
+
+18. What are the default sizes for the heading?
+A. It depends on the browser. But, in general <h1> is 200% of the default body text font size, <h2> is 150%, <h3> is 120%, <h4> is 100%, <h5> is 90% and <h6> is 60%.
+
+Note : Notice that by default <h4> is the same font-size as the body font-size and <h5> & <h6> are smaller.
+
+19. I like the idea using pixels because then my page will look exactly like i specify it?
+A. There is some truth to that by using pixels for every elements on size you are choosing the precise font-size you want for your each element. But you do that at the cost of living some of your users the flexibility to pick a font-size that is appropriate for their display.
+
+20. What is the difference between 'em' & '%'?
+A. They are basically two different ways to achieve the same thing. Both give you a way to specify a size relative to the parent font-size. A lot of people find percent is easier to think about than em, and also easier to read in your css.
+
+21. Rather than using the size keywords, can i use em or % in the body rule? If i use 90% for the font size of the body what does that mean exactly? its 90% of what?
+A. Yes, you can do that. If you specify a font-size of 90% in your body rule then that would be 90% of the default font-size, which is usually 16px. So 90% would be about 14px. If you would like a font-size different than the keywords provided then use % or em.
+
+22. There seems to be so many differences between browsers : font-family, font-size, various default setting, and so on. How will i ever know if my design looks good on other browsers?
+A. Most of your designs are going to look just fine in other browsers. However you should know that they may look slightly different in different browsers - the fonts maybe slightly bigger or smaller, spacing here and there maybe different etc..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+﻿Chapter-23
+
+1. Liquid Layout : A Liquid layout is one in which the content of the page expands to fit the page when you expand the browser window and vice versa.
+
+All the designs we have done so far are called 'Liquid Layout', because they expand or compress to fill whatever width we resize the browser to.
+
+Example : Ammu's Kitchen webpage
+
+a) Open index.html file and show the output.
+b) Resize the browser window and explain
+
+2. Frozen Layout : A Frozen layout is one in which the width of the content is fixed & it doesn't expand or shrink with the browser window.
+
+Frozen layout lock the elements, frozen to the page, so they cant move at all. When a user resizes the screen, your design stays as it is.
+
+3. In order to convert from Liquid layout to Frozen layout follow the following steps : 
+
+a) Open index.html file in ammus-kitchen folder.
+b) Put the entire body content inside a <div>:
+
+<body>
+<div id = "all-content">
+--------------
+--------------
+</div>
+</body>
+c) Save.
+d) Open index.css file
+e) Add : 
+#all-content{
+	width : 1260px;
+    }
+f) Save the file.
+g) Show the output.
+h) Resize the browser window & explain.
+
+4. Jello layout : A Jello layout is one in which the content width is fixed, but the margins expand & shrink with the browser window.
+
+Jello layout lock down the width of the content area and it usually places the content in the center of the page.
+
+Jello layout have the same advantage of Frozen layout, but is often more attractive.
+
+5. In order to convert from Frozen layout to Jello layout follow the following steps : 
+
+a) Open index.css file.
+b) Add : margin-left : auto;
+	 margin-right : auto;
+c) Save the file.
+d) Show the output.
+e) Resize the browser window & explain.
+
+6. The Position property : The Position property in html is used to specify the type of positioning method used for and element.
+
+There are 4 different position values : 
+a) static
+b) relative
+c) fixed
+d) absolute
+
+a) static : Static positioning is the default, which places an element in the normal flow of the page.
+b) relative : Relatively positioned elements are first flowed into the page as normal & then offset by the specified amount, leaving empty space where they would normally sit.
+With relative positioning left, right, top & bottom refer to the amount of offset from the element's default position in the normal flow.
+c) fixed : Fixed position elements are always positioned relative to the browser window & do not move when the page is scrolled. Other content in the page scrolls underneath that element.
+d) absolute : Absolute positioning lets you place elements anywhere in the page. By default, absolutely positioned elements are placed relative to the sides of the page.
+
+7. Example of absolute positioning : 
+a) Open index.css file.
+b) Remove the float property in paratha ingredients & save the file.
+c) Show the output.
+d) Cam pans to index.css file.
+e) Add : 
+	#paratha_ingredients {
+		position : absolute;
+		top : 700px;
+		left : 200px;
+	   }
+f) Save the file.
+g) Show the output & explain.
+h) Cam pans to index.css file.
+i) Remove the float property in rasam ingredients.
+j) Add : 
+	#rasam_ingredients { 
+		position : absolute;
+		top : 1489px;
+		left : 200px;
+	   }
+k) Remove the float property in pakoda ingredients.
+l) Add : 
+	#pakoda_ingredients {
+		position : absolute;
+		top : 2514px;
+		left : 200px;
+	    }
+m) Save the file.
+n) Show the output & explain.
+
+8. Bullet points :
+a) A Liquid layout is one in which the content of the page expands to fit the page when you expand the browser window.
+b) A Frozen layout is one in which the width of the content is fixed & it doesn't expand or shrink with the browser window.
+c) A Jello layout is one in which the content width is fixed but the margins expand & shrink with the browser window. A Jello layout usually places the content in the center of the page.
+d) There are 4 different values for Position property : static, absolute, fixed & relative.
+e) If an absolutely positioned element is nested within another position element, then its position is relative to the containing element that is positioned.
+f) The properties Top, Right, Bottom & Left are used to position elements for absolute, fixed & relative positioning.
+
+9. What is the Position property set to by default?
+A. The default value for positioning is "static", with static positioning the element is placed in the normal document flow & isn't positioned by you. The browser decides where it goes.
+
+10. Can i only position <div>s?
+A. You can absolutely position any element, block or inline. Just remember that when an element is positioned it is removed from the normal flow of the page.
+
+11. Do i have specify a width for an absolutely positioned element just like the floated element?
+A. No, you dont have to specify a width for absolutely positioned elements. But if you dont, by default, the block element will take up the entire width of the browser, minus any offset you specify from the left or right.
+
+12. Do i have to use pixels for positioning?
+A. No, another common way to position elements is using percentages.  

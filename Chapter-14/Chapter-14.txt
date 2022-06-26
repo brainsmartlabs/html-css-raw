@@ -1,0 +1,108 @@
+Chapter-14
+
+1. Introducing class attribute : The class attribute sepcifies the class name of a particular element.
+It is primarily used to point to a particular class in a HTML file.
+
+Example : <p class = "vision"> (in HTML file)
+
+p.vision {
+		color : maroon;
+}  (in css file)
+
+Note : We can use save class name to multiple class attributes.
+
+2. Adding class attribute to index.html : (type ani)
+
+a) Open index.html file.
+b) Cam focus on first paragraph & add <p class = "vision"> </p>
+c) Cam focus on second paragraph & add <p class = "vision"> </p>
+d) Cam focus on third paragraph & add <p class = "faculty"> </p>
+
+3. Creating a class selector in css : (type ani)
+
+p.vision {
+		color : #363636;
+}
+
+p.faculty{
+    font-weight: bold;
+}
+
+Open index.html file show the output & explain the styles of three paragraphs
+
+4. Understanding inheritance in html : 
+
+a) HTML appears with sparkle effect.
+b) Draw two lines & head along with body appears.
+c) Draw two lines & title along with link appears.
+d) Draw six lines from body & image, h2, p, p, h3 & p appears.
+e) Draw two lines from last p & a, a appears. 
+f) Show the output & explain the inherited properties from body to all the below elements & p to both a elements.
+
+5. Overriding the inheritance:
+body{ 
+   	 font-family:sans-serif;
+    }
+
+h2,h3{
+    font-family: serif;
+
+}
+
+a) The font-family property is set in the body rule, so every element inside the body inherit the sans-serif property.
+b) To override the font-family property in h2 & h3, inherited from body, add a new rule with the font-family property value set to serif.
+
+6. Bullet points :
+
+a) Many properties are inherited. For instance if a property that is inherited is set for the <body> element, all the <body>'s child element will inherit it.
+b) You can always override properties that are inherited by creating a more specific rule for the element you would like to change.
+c) Use the class attribute to add elements to a class.
+d) Use a "." between the element name & class name to select a specific element in that class.
+e) Use ".classname" to select any elements that belong to the class.
+f) You can validate your css using the W3C validator at http://jigsaw.w3.org/css-validator/.
+
+7. Which rule does the browser apply when we override an inherited value?
+A. The browser applies the most specific rule when we override an inherited value 
+For example : body{ 
+    border: 4px double #379a33;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family:sans-serif;
+    background-color:lavender;
+}
+
+p.faculty{
+    font-weight: bold;
+}
+
+In the above scenario the browser applies the second rule as it is more specific than the first rule.
+
+8. Which are the rules that the child tag inherits from the parent tag?
+A. In genral the child tags inherit the font-color, the font-family and other font related rules (font-size, font-weight etc...)
+
+9. How to add a comment in HTML?
+A. To add a comment in HTML enclose the content you want as a comment in between the 
+<!--Comment-->.
+
+10. How to add a comment in CSS?
+A. To add a comment in CSS enclose the content you want as a comment in between the 
+/*Comment*/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+Chapter-04
+
+1. Introducing <a> tag : An Anchor tag (<a>) is used to create a hyper text link which connects two web pages with one another.
+
+The content of an <a> tag element will become a clickable link on our web page.
+Ex : <a href = "file name.html">label</a> (arrow with text - attribute name, double quotes, attribute value)
+
+a) href is an attribute in our <a> tag which is to specify the destination of the given hyper link.
+b) It loads the file which is linked to our main file.
+c) It is displayed as clickable link on our web page.
+
+Note : Any hyper link in HTML is by default displayed with an underline by our browser on the web page.
+
+2. Understanding attributes : An attribute is a part of a html element which provides additional information about that particular element.
+
+Different types of attributes : 
+
+a) <style type = "text/css"> : The 'type' attribute here specifies which style language we are using.
+b) <img src = "pani-puri.jpg"> : The 'src' attribute here specifies the file name & its location of the picture which is to be displayed on our web page using the <img> tag.
+c) <a href = "helloworld.html"> : The 'href' attribute here specifies the browser an exact destination of the hyper link which is enclosed by an <a> tag.
+
+3. Bullet points : 
+
+a) Attribute are used to customise an element.
+b) href is nothing but 'hypertext reference'.
+c) When a link is clicked it is the href which tells the browser which file has to be loaded.
+d) href is generally used inside an <a> tag.
+e) A hypertext refernce is nothing but a resource that available on the internet or in your Pc/Server.
+f) Usually resource is a web page or a PDF document.
+
+4. Creating the webpage : Topper Tutorials
+
+<html>
+    <head>
+    <title>Topper Tutorials</title>
+        <style type="text/css">
+        
+            body{ 
+            border: 4px double #379a33;
+            padding: 30px;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 20px;
+            font-family:sans-serif;
+            background-color:lavender;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="topper-tutorials-logo.png" width="200" height="200">
+        <img src="font.png" width="800" height="120">
+        <h2>"Right place for Bright Future"</h2>
+        <img src="youth.png" width="600" height="280">
+        <p>Topper Tutorials works towards "Nurturing Success of Every Student" through a friendly academic environment, supported by technology, which is built around a culture of caring.</p>
+        
+        <p>We achieve what we do through constant mentoring & observation. At the end of the course, our students will be fully enabled to do well in both board exams & competitive exams.</p>
+        
+        <h3>Our Faculty</h3>
+        <p>An institution is only as good as its teachers are. <a href="faculty.html">Our faculty</a> members challenge their students, share insights gained through professional experience & communicate the knowledge they have acquired over the years through pure determination & grit. They are very supportive of their students in the classrooms & in the labs. <a href="location.html">Locate Us.</a> </p>
+        
+    </body>
+</html>
+
+a) Show text in type animation.
+b) show the output.
+c) Add css to topper tutorials in type animation.
+d) Show the output.
+e) Add image & show the output.
+f) Resize the image in proper size.
+g) Show the output.
+
+5. Creating the webpage : Faculty
+
+<html>
+    <head>
+        <title>Faculties</title>
+        <style type="text/css">
+
+            body{ 
+                border: 4px double #379a33;
+                padding: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 20px;
+                font-family:sans-serif;
+                background-color:lavender;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Founder</h1>
+        <img src="rajkumar.png" width="200" height="200">
+        <h4>Dr.Rajkumar</h4>
+        <p>Dr.Rajkumar, the founder of Topper Tutorials, armed with a vision of providing an academic environment that nurtured original thinking and created confident individuals he founded the Topper Tutorials in the year 2001.Being a fun loving person, he makes sure to spend time with his own children at home, listen to music & engage in different kinds of sports.</p>
+
+        <h2>Faculty members</h2>
+        <img src="shankarnag.png" width="200" height="220">
+        <h4>Prof.Shankarnag</h4>
+        <p>Prof.Shankarnag has been a faculty at Topper Tutorials since 2003.Outside of his responsibilities in the physics classroom and lab, he hosts sessions of physics to the young, observatory and voluntary students as a hobby.</p>
+
+        <img src="vishnuvardhan.png" width="200" height="195">
+        <h4>Dr.Vishnuvardhan</h4>
+        <p>Dr.Vishnuvardhan, Professor at Topper Tutorials began teaching in 2001. He currently teaches general, analytical, inorganic chemsitry and laboratory glassblowing.  He enjoys helping students, to reach their academic potential.  </p>
+
+        <img src="prabhakar.png" width="200" height="200">
+        <h4>Asst.Prof.Prabhakar</h4>
+        <p>Mr.Prabhakar Assistant Professor of Mathematics at Topper Tutorials began teaching in 2003. He has particularly mastered in the mathematical theory of knots, their applications and their connections with hyperbolic geometry.</p>
+
+        <img src="kashinath.png" width="200" height="180">
+        <h4>Kashinath PhD</h4>
+        <p>Prof.Kashinath, has been at Topper Tutorials since 2005. His teaching interests include plant systematics and genetics. Apart from biology, he advises in the areas of natural science, veterinary medicine, medical radiography and occupational therapy.</p>
+    </body>
+</html>
+
+a) Show text in type animation.
+b) Show the output.
+c) Add css to faculty.
+d) Show the output.
+e) Add images & Show the output.
+
+6. Creating a web page : Location
+
+<html>
+<head>
+    <title>Location</title>
+    <style type="text/css">
+        body{
+            padding: 10px;
+            font-size: 20px;
+            font-family:sans-serif;
+            background-color:lavender;
+            }
+    </style>
+    </head>
+<body>
+    <h1>Address</h1>
+    <p>#320, 1st Floor, 4th main,<br> 5th cross, Near Kanishka Hotel, <br>Gandhi Nagar, Banglore-560009.</p>
+    </body>
+</html>
+
+a) Show text in type animation.
+b) Show the output.
+c) Add css to location & show the output.
+
+7. Link the webpages "faculty.html" & "location.html" in our topper-tutorials.html using <a> tag.
+
+a) Show type animation.
+b) Click on the link & show the output.
+c) <a href = "faculty.html">Our Faculty<a/> (Explain about importance of double quotes.)
+
+8. Can we just create new attributes for a html element?
+A. No, Web browsers can only recognize a set of predefined attributes for each element. It cannot recognize any new or customised attributes.
+
+9. Who are going to decide "The predefined sets" of attributes?
+A. There are standard committees that decide the predefined set of attributes, in order to form a uniform road map to implement these attirbutes.
+
+10. Can a image be a clickable link?
+A. Yes, If you place the <img> element inbetween <a> tag, Your image will be a clickable link.
+
+11. Can a paragraph be a ckickable link?
+A. Yes, If you place the <p> element in between <a> tag, Your paragraph will be a clickable link.
+
+
+
+
+
+
+
+

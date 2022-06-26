@@ -1,0 +1,198 @@
+Chapter-21
+
+1. Shorthands in CSS : The CSS shorthands allows us to set the multiple values of same css properties at once.
+
+2. CSS shorthand properties for padding : The padding property is a shorthand property for padding-top, padding-right, padding-bottom & padding-left properties.
+
+Instead of specifying four padding properties, you can use the padding shorthand property.
+
+Example : 
+
+If the padding property has four different values : 
+
+padding-top : 10px; 
+padding-right : 5px;
+padding-bottom : 20px;
+padding-left : 15px; 
+
+Then you can write it as :
+
+padding : 10px 5px 20px 15px;
+
+a) All the values are present.
+b) Padding shorthand appears with typing animation.
+c) Arrow with box appears (padding-top).
+d) Arrow with box appears (padding-right).
+e) Arrow with box appears (padding-bottom).
+f) Arrow with box appears (padding-left).
+
+3. If the padding property has same value for all four sides : 
+
+padding-top : 10px; 
+padding-right : 10px;
+padding-bottom : 10px;
+padding-left : 10px; 
+
+Then you can write it as :
+
+padding : 10px;
+
+a) All the values are present.
+b) Padding shorthand appears with typing animation.
+c) Explain (when all four sides have the same padding value then we can write it as shown above).
+
+4. If the padding property has same value for top & bottom as well as right & left : 
+
+padding-top : 10px; 
+padding-right : 20px;
+padding-bottom : 10px;
+padding-left : 20px; 
+
+Then you can write it as :
+
+padding : 10px 20px;
+
+a) All the values are present.
+b) Padding shorthand appears with typing animation.
+c) Arrow with box appears (top & bottom).
+d) Arrow with box appears (right& left).
+
+5. The margin property is a shorthand for margin-top, margin-right, margin-bottom & margin-left properties.
+
+Instead of specifying four margin properties you can use the margin shorthand property.
+
+Example :
+
+If the margin property has four different values : 
+
+margin-top : 10px; 
+margin-right : 20px;
+margin-bottom : 30px;
+margin-left : 40px; 
+
+Then you can write it as :
+
+margin : 10px 20px 30px 40px;
+
+a) All the values are present.
+b) margin shorthand appears with typing animation.
+c) Arrow with box appears (margin-top).
+d) Arrow with box appears (margin-right).
+e) Arrow with box appears (margin-bottom).
+f) Arrow with box appears (margin-left).
+
+6. If the margin property has same value for all four sides :
+
+margin-top : 10px; 
+margin-right : 10px; 
+margin-bottom : 10px; 
+margin-left : 10px; 
+
+Then you can write it as :
+
+margin : 10px;
+
+a) All values are present.
+b) Shorthand appears with typing animation.
+c) Explain. (when all four sides have same margin value, then we can write it as shown above)
+
+7. If the margin property has same value for top & bottom as well as right & left :
+
+margin-top : 10px; 
+margin-right : 20px; 
+margin-bottom : 10px; 
+margin-left : 20px;
+
+Then you can write it as :
+
+margin : 10px 20px; 
+
+a) All values are present.
+b) Shorthand appears with typing animation.
+c) Arrow with box appears (top & bottom).
+d) Arrow with box appears (right& left).
+
+8. Shorthand for border : border is a shorthand property for border-width, border-style & border-color.
+
+Example : border-width : thin;
+	  border-style : solid;
+          border-color : blue;
+          
+We can rewrite the border properties as one property : 
+
+border : solid thin blue;
+
+Note : The border shorthand is more flexible than padding or margin because you can specify them in any order.
+
+9. Shorthand for backgrounds : background is a shorthand property for background-color, background-image & background-repeat.
+
+Example :
+
+background-color : white;
+background-image : url(images/youth.png);
+background-repeat : repeat-x; 
+
+We can write the background properties as one property:
+
+background : white url(images/youth.png) repeat-x;
+
+Note : values can be written in any order in this shorthand.
+
+10. Shorthand for font : all the properties we need for the font are : font-family, font-style, font-weight, font-size, font-variant & line-height.
+
+There is a shorthand that wraps all the above font properties into one property.
+
+Note : ordering of values is very important in this property.
+
+font : font-style font-variant font-weight font-size/line-height font-family;
+
+a) These values are optional. You can specify any combination of them but they need to come before the font-size property.
+b) You must compulsorily specify font-size.
+c) The line height property is optional.
+d) Finally you need to add font-families.(use commas between your font-family names to separate them)
+
+Example : 
+
+font-size : large;
+font-family : verdana, arial, sans-serif;
+line-height : 1.5em;
+
+Shorthand : 
+
+font : large/1.5em verdana, arial, sans-serif;
+
+11. Mini assignment : Change all the relevant properties in your ".css" file by using shorthand(font,border,margin,padding & background).
+
+12. Bullet Points : 
+
+a) You can use shortcuts for related properties for instance padding-top, padding-right, padding-bottom & padding-left are all related to padding & can be specified with one shortcut rule, padding.
+b) padding, border, margin, background & font properties can be specified with shortcuts.
+
+13. Should i always use shorthand?
+A. Not necessarily. Some people find the long form more readable. Shorthands have the advantage of reducing the size of your css files, & they require less typing. They are little more difficult to debug, if you have incorrect values or the wrong order. So you should use whichever form you are comfortable with. Because they both are perfectly valid.
+
+14. Why are the shorthand properties considered more complex compared to the normal procedure of providing properties?
+A. Because it is difficult to remember the ordering & also what is & isn't optional, they consider shorthand as more complex. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

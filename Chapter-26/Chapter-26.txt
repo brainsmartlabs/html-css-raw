@@ -1,0 +1,213 @@
+﻿Chapter-26
+
+1. <table> in HTML : The <table> tag is used to define a HTML table.
+A HTML table consists of the <table> element & one or more <tr>, <th> & <td> elements.
+
+Tables give you a way to specify tabular data in your HTML, which consists of rows & columns, & at the intersection of each row & column we have a cell.
+
+<table> element is used to start the table, <tr> element defines a table row, <th> element defines a table header & the <td> element defines the table cell.
+
+2. Creating a table with HTML : 
+a) Create a new file in Brackets & save it as index.html.
+b) Open index.html  file & type : 
+
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Table of States & Capitals</title>
+    </head>
+    <body>
+            <table>
+
+                <tr>
+                    <th>State</th>
+                    <th>Capital</th>
+                    <th>Population</th>
+                    <th>Area(Km<sup>2</sup>)</th> 
+                </tr>
+
+                <tr>
+                    <td>Karnataka</td>
+                    <td>Bengaluru</td>
+                    <td>6,10,95,297</td>
+                    <td>1,91,791</td>
+                </tr>
+
+                <tr>
+                    <td>Andhra Pradesh</td>
+                    <td >Hyderabad</td>
+                    <td>4,97,80,77</td>
+                    <td>1,60,205</td>
+                </tr>
+
+
+                <tr>
+                    <td>Telangana</td>
+                    <td>Hyderabad</td>
+                    <td>3,50,03,674</td>
+                    <td>1,12,077</td>
+                </tr>
+
+
+                <tr>
+                    <td>Kerela</td>
+                    <td>Thiruvananthapuram</td>
+                    <td>3,34,06,061</td>
+                    <td>38,852</td>
+                </tr>
+
+                <tr>
+                    <td>Tamil Nadu</td>
+                    <td>Chennai</td>
+                    <td>7,21,47,030</td>
+                    <td>1,30,060</td>
+                </tr>
+
+                <tr>
+                    <td>Punjab</td>
+                    <td>Chandigarh</td>
+                    <td>2,77,04,236</td>
+                    <td>50,362</td>
+                </tr>
+
+                <tr>
+                    <td>Haryana</td>
+                    <td>Chandigarh</td>
+                    <td>2,81,07,999</td>
+                    <td>44,212</td>
+                </tr>
+
+            </table>
+    </body>
+</html>
+c) Save the file.
+d) Show the output & explain.
+
+3. Adding style to the table :
+a) Create a new folder 'css'.
+b) Create a new file in brackets & save it as index.css inside the css folder.
+c) Open index.css file & type :
+		table {
+			border : 2px solid black;
+		  }
+d) Save the file.
+e) Cam pans to index.html file.
+f) Add : <link type = "text/css" rel = "stylesheet" href = "css/index.css">
+g) Save the file.
+h) Show the output & explain.
+
+4. 
+a) Open index.css file.
+b) Add : th,td {
+		border : 1px dashed black;
+		}
+c) Save the file.
+d) Show the output & explain.(explain about two separate borders)
+e) Cam pans to index.css file.
+f) Add : table {
+		border-collapse : collapse;
+	    }
+g) Save the file.
+h) Show the output & explain.
+
+5. For script : Now we have got a small table & it doesn't look good. Lets make it large by giving width & height.
+
+6. 
+a) Open index.html file.
+b) Cam focus on <table> & add :
+		<table width = "800" height = "600">
+c) Save the file.
+d) Show the output & explain.
+e) Open index.css file.
+f) Add : 
+	table {
+		margin-left : 20px;
+		margin-right : 20px;
+		text-align : center;
+	  }
+
+        th,td { font-size : 20px; }
+g) Save the file.
+h) Show the output & explain.
+
+7. For script : Lets place our table at center of the page by adding a <div> around <table>.
+
+8.
+a) Open index.html file.
+b) Add : 
+	<div id = "main-table">
+		<table width = "800" height = "600">
+		-----------------------------------
+		</table>
+	</div>
+c) Save the file.
+d) Open index.css file.
+e) Add :
+	#main-table {
+		position : absolute;
+		top : 110px;
+		left : 400px;
+	  }
+f) Save the  file.
+g) Show the output & explain.
+
+9. 
+a) Open index.css file.
+b) Add : 
+	body { background-color : #f5f5dc; }
+	th { background-color : #f0bdf0; }
+	td { background-color : #f5dcf5; }
+c) Save the file.
+d) Show the output & explain.
+
+10. Adding a Caption : The <caption> element is used to provide additional information about the table.
+By default, most browsers display the caption above the table.
+If you dont like the default location of the caption, you can use css to re-position it to the bottom.
+
+a) Open index.html file.
+b) Add : <table width = "800" height = "600">
+	<caption>List of States with its Capital & Population</caption>
+	---------------------------------------------------------------
+	</table>
+c) Save the file.
+d) Open index.css file.
+e) Add : caption { 
+	font-size : 35px;
+	font-family : cursive;
+	font-weight : bold;
+	padding-bottom : 15px;
+   }
+f) Save the file.
+g) Show the output & explain.
+
+11. Bullet points :
+a) HTML tables are used to structure tabular data.
+b) Use the HTML table elements <table>, <tr>, <th> & <td> together to create a table.
+c) The <table> element defines & surrounds the entire table.
+d) Tables are defined in rows, using the <tr> element.
+e) Each row contains one or more data cells, defined with the <td> element.
+f) Use the <th> element for data cells that are row or column headings.
+g) Tables are laid out in a grid. Each row corresponds to a <tr>-----</tr> row in your HTML & each column corresponds to the <td>-----</td> content within the rows.
+h) You can provide additional information about your tables with the <caption> element.
+i) border-collapse is a special CSS property for tables that allows you to combine cell borders into one border for a cleaner look.
+
+12. Why isn't there a table column element? That seems pretty important.
+A. The designers of HTML decided to let you specify tables by row, rather than by column. But notice that by specifying each row's <td> elements, you are implicitly specifying each column anyway.
+
+13. What happens if I have a row that doesn't have enough elements? In other words, I have got fewer things than the number of columns in the table?
+A. The easiest way to deal with that is to just leave the content of the data cell empty; In other words, you write <td></td>. If you leave out the data cell, then the table won't line up properly, so all the data cells have to be there, even if they are empty.
+
+14. Isn't a table all about presentation? What happened to presentation vs structure?
+A. Not really. With tables, you are specifying the relationship between tabular data items. We will use css to alter the presentation of the table.
+
+15. How do HTML tables relate to css table display?
+A. HTML tables allows you to specify the structure of a table using markup while css table display give you a way to display block-level elements in a table-like presentation. Think about it this way, when you really need to create tabular data in a page, use tables; However, when you just need to make use of a table-like presentation with other types of content, then you can use a css table display layout.
+
+16. You said border spacing is defined for the entire table, so I can't set a margin for an individual table cell?
+A. Right. Table cells don't have margins; What they have is spacing around their borders, & this spacing is set for the entire table. You can't control the border spacing of each table cell separately.
+
+17. Well, is there any way to have different border spacing on the vertical than I have on the horizontal? That seems useful.
+A. You sure can. You can specify your border spacing like this : 
+	border-spacing : 10px 30px;
+That sets 10px of horizontal border space & 30px of vertical border space.

@@ -1,0 +1,334 @@
+Chapter-17
+
+1. Introducing Box Model : All HTML elements can be considered as boxes. In CSS 'Box Model' is essentially a box, the wraps around every HTML element. In consists of : the content, padding, border & margin.
+
+Example : show the box model diagram.
+
+2. Content area : The content area holds the element's content, like text or an image etc..
+The content is placed inside a box, that is just big enough to contain the content. So the content area has no white space between the content & the edge of the box.
+
+There is no visible edge around the content area.
+
+Example : show the box model diagram & highlight the content area.
+
+3. Padding : padding is used to create visual white space between the content & the border of the box.
+The content area is surrounded by optional trasparent padding.
+
+Using css, we can control the width of the padding or even control the padding on any one side (top, bottom, right & left). 
+
+Example : show the box model diagram & highlight the padding area.
+
+4. Border : border is in the form of a line, that surrounds the padding.
+Border is optional, which provides visual separations between the content & other elements on the same page.
+
+Using css, we can control the width, color & style of the border.
+
+Example : show the box model diagram & highlight the border.
+
+5. Margin : margin is used to add space between two elements on the same page. The margin is also optional, trasparent & surrounds the border.
+
+Using css, we can control the width of the entire margin or of any particular side (top, bottom, right & left).
+
+Example : show the box model diagram & highlight the margin area.
+
+6. Border style : The border-style property controls the visual style of the border.
+
+Example : border-style : solid;
+
+There are 8 border styles : (show examples for all during animation)
+
+a) solid : The solid style gives a solid border.
+b) dotted : The dotted style looks like a series of dots.
+c) double : The double style gives two lines.
+d) dashed : The dashed style looks like a set of dashes.
+e) groove : The groove style looks like a groove in the page.
+f) inset : The inset style looks like an inset that sinks into the page.
+g) outset : The outset style looks like an outset that rises from the page.
+h) ridge : The ridge style looks like a raised ridge on the page.
+
+7. Border width : The border-width property controls the width of the border.
+We can use keywords (thick, thin, medium) or pixels to specify the width.
+
+Example : border-width : thick;
+	  border-width : 3px;
+(show examples during animation)
+
+8. Border color : The border-color property sets the color of the border.
+You can use color names, rgb values or hexcodes to specify the color.
+
+Example : border-color : blue;
+	  border-color : rgb(0%, 0%, 100%);
+	  border-color : #0000ff;
+(show examples during animation)
+
+9. Specifying border sides : You can specify border style, width or color or any side(top, bottom, right & left).
+You can specify each side of the border independently.
+Example : border-top-color : blue;
+	  border-right-width : thick;
+	  border-left-style : dotted;
+(show examples during animation)
+
+10. Specifying border corners : You can create rounded corners on all four corners, just one corner or any combination.
+
+Example : border-radius : 15px; (For all four corners)
+	  border-top-left-radius : 10px;
+	  border-top-right-radius : 10px;
+
+11. For Script : Open index.html file in topper-tutorials folder & remove the class attribute(vision & faculty) & remove <h2> element full. Open index.css & remove the styles of that class and remove the property p{color : maroon;}.
+
+12. Adding box model to our index.html file inside topper-tutorials folder : (Type ani)
+
+(Animation flow)
+ 
+Open index.html file.
+ 
+Add : <p>
+            Right place for Bright Future..!
+            100% Distinction Guaranteed
+            Admissions for Pre University Students
+            Contact: +91-8095838383
+        </p>
+ Show the output.
+ 
+Add <br> element : 
+        <p>
+            Right place for Bright Future..!<br>
+            100% Distinction Guaranteed<br>
+            Admissions for Pre University Students<br>
+            Contact: +91-8095838383
+        </p>
+ Show the output.
+ 
+Add class to <p> element :
+	<p class="bright">
+            Right place for Bright Future..!<br>
+            100% Distinction Guaranteed<br>
+            Admissions for Pre University Students<br>
+            Contact: +91-8095838383
+        </p>
+ Save the file.
+ Open index.css file.
+ 
+ Add : p.bright{
+                color:#ef3c5a;
+    		font-size:27px;
+    		font-family:cursive;
+   	       }
+ Save the file.
+ Show the output.
+
+Cam pans to index.css
+
+Add : p.bright{
+	        color:#ef3c5a;
+    		font-size:27px;
+    		font-family:cursive;
+		border-style:solid;
+        	border-color:black;
+        	border-width: 2px;
+   	       }
+ Save the file.
+ Show the output.
+
+Cam pans to index.css
+
+Add : p.bright{
+	        color:#ef3c5a;
+    		font-size:27px;
+    		font-family:cursive;
+		border-style:solid;
+        	border-color:black;
+        	border-width: 2px;
+		padding-left:10px;
+        	padding-top: 10px;
+        	padding-bottom: 10px;
+   	       }
+ Save the file.
+ Show the output. (As the text is conjested on the left side of the box we have to increase the  padding left to align it properly)
+
+ Cam pans to index.css
+ 
+ Change the padding-left : 40px; & show the output.(Now the text looks a bit more to the right side we have to align it properly using padding)
+
+ Cam pans to index.css
+
+ Change the padding-left : 28px; & show the output.(Explain)
+ 
+ Now we want the box corner to look rounded, So we are adding border-radius property :
+ 
+ p.bright{
+        color:#ef3c5a;
+        font-size:27px;
+        font-family:cursive;
+        border-style:solid;
+        border-color:black;
+        border-width: 2px;
+        padding-left:28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 60px;
+	}
+Show the output. (this looks too rounded so lets reduce the radius a bit)
+
+Cam pans to index.css
+
+Change the border-radius: 15px; & show the output.(Explain)
+
+Cam pans to index.css
+
+Now we can see the box looks a bit empty so lets add a background color inside the box :
+ 
+p.bright{
+        color:#ef3c5a;
+        font-size:27px;
+        font-family:cursive;
+        border-style:solid;
+        border-color:black;
+        border-width: 2px;
+        padding-left:28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 60px;
+	background-color: white;
+	}
+Show the output. (Explain)
+
+Cam pans to index.css
+
+As we can see there is a lot of empty space on the right side of the box to reduce that we are going to add margins : 
+
+p.bright{
+        color:#ef3c5a;
+        font-size:27px;
+        font-family:cursive;
+        border-style:solid;
+        border-color:black;
+        border-width: 2px;
+        padding-left:28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        background-color: white;
+        margin-right: 250px;
+        }
+
+Show the output. (Still there is lot of empty space on the right. So we need to play with the values & reduce the empty space)
+
+Cam pans to index.css
+
+Change the margin-right: 450px; 
+Show the output. (Still there is little bit of empty space on the right. Lets reduce it)
+
+Cam pans to index.css
+
+Change the margin-right: 680px; 
+Show the output. (Explain)
+
+Cam pans to index.css
+
+Now there should be a little bit of margin on the left side of the box. So lets add margin-left :
+
+p.bright{
+        color:#ef3c5a;
+        font-size:27px;
+        font-family:cursive;
+        border-style:solid;
+        border-color:black;
+        border-width: 2px;
+        padding-left:28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        background-color: white;
+        margin-right: 680px;
+        margin-left: 20px;
+        }
+
+Show the output. (Explain)
+
+13. Bullet Points :
+
+a) CSS uses a box model to control how elements are displayed.
+b) Boxes consists of the content area and optional padding, border & margin.
+c) The content area contains the content of the element.
+d) The padding is used to create visual space around the content area.
+e) The border surrounds the padding & content & provides a way to visually separate the content.
+f) The margin surrounds the border, padding & content & allows space to be added between the element and other elements.
+g) Padding & margin size can be set in pixels or percentage.
+h) Use the border-radius property to create rounded corners on an element with a border.
+i) Use the class attribute for an element that you want style together as a group.
+
+14. What's the difference between padding and margin?
+A. The margin provides space between your element and other elements, While padding gives you extra space around your content. If you have a visual border, the padding is on the inside of the border & the margin is on the outside.
+
+15. Do you need to have padding to have a border or a margin?
+A. No, They are all totally optional & don't rely on each other. So you can have a border & no padding, or a margin & no border & so on.
+
+16. Is the size of the content area determined by the size of the content in it? 
+A. The content is the primary way that the size of an element is determined. You can set the width and height yourself, if you want to have control over the size of the element.
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+   

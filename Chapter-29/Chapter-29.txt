@@ -1,0 +1,133 @@
+Chapter-29
+
+1. The <textarea> element : The <textarea> element creates a multiline text area that you can type into. If you type more text than that will fit into the text area, then a scroll bar appears on the right side. 
+
+Example : Address:(Draw a box along with the above text)
+
+For which the <textarea> element is : 
+	<textarea name = "address" rows = "20" cols = "30"> </textarea>
+
+The <textarea> element is not an empty element, so it has both opening & closing tags.
+Use the name attribute to give the element a unique name.
+The rows attribute tells the browser how many characters tall to make the text area.
+The cols attribute tells the browser how many characters wide to make the text area.
+Any text that goes between the opening & closing tags becomes a initial text in the browsers text area control.
+
+2. <select> & <option> element : The <select> element creates a menu control in the webpage. The menu provides a way to choose between a set of choices.
+The <option> element works with the <select> element to create a menu. Use an <option> element for each menu item.
+
+Example : (select box for subjects)
+
+The <select> element creates a menu that looks like this, after clicking on the menu, the menu items drop down appears.
+For which the <select> & <option> element is : 
+	<select name="subjects">
+                        <option value="PCMB">PCMB</option>
+                        <option value="PCMC">PCMC</option>
+                        <option value="PCME">PCME</option>
+        </select>
+The <select> element goes around all the menu options to group them into one menu.
+Just like the other form elements, give the select element an unique name using the name attribute.
+Each menu option also includes a value attribute, which represents the menu item.
+
+3. date input : Use the date <input> element to specify a date, with a date picker control. The control creates a valid date format string to send to the server script.
+
+Example : (Drop down box with calender)
+For which the date <input> is : <input type = "date">
+
+4. email input : The email <input> element is just a text input, but on some mobile browsers, you will get a custom keyboard for email when you start typing.
+Example : email : (Draw a box)
+For which the <input> element is : <input type = "email"> 
+
+5. tel input : The tel <input> element is also just a text input, but like email, causes a custom keyboard to pop up on mobile devices.
+Example : phone : (Draw a box)
+For which the <input> element is : <input type = "tel">
+
+6. Adding few other <form> elements to our Admission form :
+a) Open admission.html file.
+b) Add : address, date of birth, email, mobile & subjects.
+c) Save the file.
+d) Show the output & explain.
+e) Cam pans to admission.html file.
+f) Add : <link type = "text/css" rel = "stylesheet" href = "admission-form.css">.
+g) For each form element Add : <div class = "tablerow">.
+h) Add : <div id = "admission"> around entire body content.
+i) Add : <div id = "footer"> around the submit input.
+j) Save the file.
+k) Open a new file in brackets & save it as admission-form.css.
+l) Inside admission-form.css file Add : 
+		form {
+			display: table;
+			padding: 10px;
+    			line-height: 50px;
+		}
+
+		div.tablerow {
+			display: table-row;
+		}
+m) Save the file.
+n) Show the output & explain.
+
+7. 
+a) Open admission-form.css file.
+b) Add : div.tablerow p {
+			display: table-cell;
+			vertical-align: top;
+			padding: 3px;
+		}
+	div.tablerow p:first-child {
+			text-align: right;
+		}
+	h1,h3{
+    			text-align: center;
+		}
+
+	form textarea {
+			width: 200px;
+			height: 30px;
+		}
+c) Save the file.
+d) Show the output & explain.
+
+8.
+a) Open admission-form.css file.
+b) Add : #admission {
+			margin: 20px;
+    			border: 1.5px dashed #7e7e7e;
+    			width: 600px;
+    			height: 850px;
+    			background-color: #f2f2f2;
+    			font-size: 20px;
+    			position: absolute;
+    			margin-left: 540px;
+		}
+
+	#footer{
+    			margin-left:150px;   
+		}
+c) Save the file.
+d) Show the output & explain.
+
+9. Bullet Points :
+a) A "date" type creates a date picker in browsers that support this type.
+b) The "email" & "tel" types create single-line text inputs that cause custon keybords to appear on some mobile browsers for easier data entry.
+c) A <textarea> element creates a multiline text input area.
+d) A <select> element creates a menu, which contains one or more <option> elements. <option> elements define the items in the menu.
+e) If you put text into the content of a <textarea> element, it will become the default text in a text area control on the webpage.
+f) CSS table display is often used to layout forms, given that forms have a tabular structure. CSS can also be used to style the form's color, font style, borders & more.
+
+10. Whats the difference between a text <input> & a <textarea>?
+A. You want to use a text <input> for entering text that is just a single line, like a name or pincode, & a <textarea> for longer, multiline text.
+
+11. The "tel" & "email" look just like text inputs. Is there really a difference?
+A. The "tel" & "email" type inputs all send text strings to the server script, so in that way, they are basically the same as a text type input. However, because the browser knows that the type is "tel", for instance, it can be a bit smarter above the user interface it provides to the user. So, on some mobile browsers, the browser may display a numeric phone keypad.
+
+12. Why doesn't the <option> element have a name attribute? Every other form element does.
+A. All <option> elements are actually part of the menu that is created by the <select> element. so, we only really need one name for the entire menu, & that is already specified in the <select> element. In other words <option> elements doesn't need a name attribute because the <select> has already specified the name for the entire menu. Keep in mind that when the form is submitted, only the value of the currently selected option is sent along with this name to the server.
+
+13. For script : Explain about get & post
+
+14. Why is it called GET if we are sending something to the server?
+A. Whats the main job of a browser? to get web pages from a server. & When you are using GET, the browser is just going about getting a webpage in the normal way it always does, except that, in the case of a form, it has appended some more data to the end of the URL. Other than that the browser just adds like its a normal request. With POST, on the other hand the browser actually creates a little data package & sends it to the server.
+
+15. So why would I use POST over GET, or vice versa?
+A. There are a couple of big diferences that really matter if you want users to be able to bookmark pages that are the result of submitting a form, then you have to use GET, because there is no way to bookmark a page that has been returned as a result of a POST.  

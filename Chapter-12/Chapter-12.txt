@@ -1,0 +1,136 @@
+Chapter-12
+
+1. Solving errors of index.html in chit-chat-corner : 
+
+a) Open index.html file.
+b) Cam focus on <img src="images/chit-chat-corner-logo.png" width="600" height="170"> & remove both opening & closing <center> tags.
+c) Cam pans down & focus on <h2>Welcome to Chit Chat Corner</h2> & remove both opening & closing <center> tags.
+d) Cam pans down & focus on <img src = "images/footer.png" height = "140" width = "750">
+remove both opening & closing <center> tags.
+e) Show the output.
+f) Cam pans to index.html & focus on chit-chat-corner.logo image & add 'id' attribute.                <img id = "logo" src="images/chit-chat-corner-logo.png" width="600" height="170">
+g) Cam pans down & focus on <img id = "footer" src = "images/footer.png" height = "140" width = "750"> 
+& add 'id' attribute.
+h) Cam pans up inside the <style> tag add 
+h2{
+    text-align: center;
+  }
+i) Cam pans down inside the <style> tag add
+#logo{
+                padding-left: 87px;
+
+            }
+j) Cam pans down inside the <style> tag add
+#footer{
+                padding-left: 15px;
+            }
+k) Show output.
+l) Open validator website & upload the file index.html & click on check.
+m) All the <center> tag errors will not be displayed & image related errors will be present along with the warnings.
+n) Cam pans to index.html add alt attribute to all image tags such as logo, bhel-puri, pani-puri, masala-puri, sev-puri & footer images.
+<img id = "logo" src="images/chit-chat-corner-logo.png" width="600" height="170" alt = "Chit Chat Corner Logo">
+
+<a href="menu/pani-puri.html"><img src = "thumbnail/pani-puri-tn.jpg" alt = "pani puri"></a>
+            <a href="menu/masala-puri.html"><img src = "thumbnail/masala-puri-tn.jpg" alt = "masala puri"></a>
+            <a href="menu/bhel-puri.html"><img src = "thumbnail/bhel-puri-tn.jpg" alt = "bhel puri"></a>
+            <a href="menu/sev-puri.html"><img src = "thumbnail/sev-puri-tn.jpg" alt = "sev puri"></a>  
+
+<img id = "footer" src = "images/footer.png" height = "140" width = "750" alt = "Footer Image">
+
+o) Cam pans to validator screen & upload the file index.html & click on check.
+p) All image related errors will not display.
+
+2. Introducing 'lang' attribute : The 'lang' attribute specifies the language of the elements content.
+Ex : English = 'en', Spanish = 'es', French = 'fr' etc..
+
+Here 'en', 'es', 'fr' acts as a value for the lang attribute.
+
+Note : It is always used inside the opening <html> tag.
+
+3. Adding 'lang' attribute to index.html file : 
+
+a) Open file index.html.
+b) Cam focus on <html> tag & add 'lang' attribute.
+<html lang = "en">
+c) Open validator website & upload the file index.html & click on check.
+d) The 'lang' warning will not be displayed.
+
+4. For Script : The warning related to CSS will be taught to you in further classes.
+
+5. Upload 'pani-puri.html' to validator website :
+
+a) Validator website window will be present & upload file 'pani-puri.html' file.
+b) Click on check & two warnings will be present.
+c) Cam pans to 'pani-puri.html' & add 'lang' attribute.
+<html lang = "en">
+d) Cam pans to validator website & upload the file pani-puri.html & click on check.
+e) Only CSS warning will be present.
+f) Repeat the steps to all the remaining html files("masala-puri.html", "bhel-puri.html" & "sev-puri.html").
+
+6. Validating index.html file in ammus-kitchen folder : 
+
+a) Validator window will be present.
+b) Upload file index.html from ammus-kitchen folder & click on check.
+c) Errors & warnings will be displayed.
+d) Focus on 'doctype' error & red circle appears.
+e) Cam pans to index.html cam focus & enter keystorke appears.
+f) <!doctype html> appears with sparkle effect.
+g) Cam pans to validator screen doctype error will not be present.
+h) Focus on lang warning & circle on it.
+i) Cam pans to index.html cam focus on <html> tag & add <html lang="en"> (type ani).
+j) Cam pans to validator screen lang warning will not be present.
+k) Focus on charset warning & circle on it.
+l) Cam pans to index.html cam focus below <head> tag & <meta charset = "utf-8"> appears with sparkle. 
+m) Cam pans to validator screen charset warning will not be present.
+n) Focus on all alt errors & draw a box around it.
+o) Cam pans to index.html cam focus on all image tags one by one & all alt attributes appears one by one with sparkle effect.
+
+<img src="images/ammus-kitchen-logo.png" height="200" width="1200" alt = "Ammu's Kitchen Logo">
+
+<img src="images/aloo-paratha.jpg"  height="200" width="300" alt = "Aloo Paratha with Curd">
+
+<img src="images/mysore-rasam.jpg"  height="220" width="320" alt = "Hot Mysore Rasam with Rice">
+
+<img src="images/maggie-pakoda.jpg"  height="220" width="320" alt = "Crispy Maggie Pakoda">
+
+p) Cam pans to validator screen all alt related errors will not be present & Only CSS warning will be present.
+
+7. Mini assignment : Validate all html files in topper-tutorials folder. 'index.html'(in topper-tutorials folder), 'location.html'(in address folder) & 'faculty.html'(in staff folder) with the help of W3C validator.
+
+8. Bullet points : 
+
+a) The 'lang' attribute is used along with <html> tag to specify the language of html page.
+b) By following the standards of html, your pages will be displayed quicker & with fewer differences between different browsers. 
+c) The 'alt' attribute is compulsory according to latest html standards.
+
+9. What is the need of an 'alt' attribute?
+A. 'alt' attribute is compulsory according to the html standards as it displays a meaningful description in the place of an image if the browser is unable to load that image.
+
+10. What are the consequences of not declaring the 'doctype' in a HTML page?
+A. If we do not declare 'doctype' in html page the browser will not understand that we are using html 5 version & there are chances of different browser displaying the webpage in different ways.
+
+11. Even though we have added the 'doctype' & 'meta' tag the page still looks the same why?
+A. The 'doctype' tag specifies to the browser that the developer is using HTML 5 version & 'meta' tag is used for character encoding hence there is no change in the webpage. 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

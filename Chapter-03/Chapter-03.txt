@@ -1,0 +1,130 @@
+Chapter-03
+
+1. CSS : Cascading Style Sheet(CSS) is a simple style language used to describe the presentation of a html document.
+YOu can add css to a html web page by placing the css rules inside the <style> element.
+
+The <style> element code should always be present inside the <head> element. (Non-viewable region).
+
+EX : <style type = "text/css">
+
+		---> Here we can add the styles for the page
+     </style>
+
+a) To add style you have to use a new element <style>, the <style> element has an opening tag <style> & a closing tag </style>.
+b) The <style> tag has an attribute called type which tells the browser what kind of style are we using.
+c) The "text/css" specifies that we are giving style input in the form of "text", Whose content is coded in css.
+
+2. <html>
+<head>
+<title>Chit Chat Corner</title>
+    <style type = "text/css">
+        body{
+            background-color: lightpink;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 2px solid black;
+            padding: 10px 10px 10px 10px;
+            font-family: sans-serif;
+            }
+    </style>
+</head>
+<body>
+<h1>Chit Chat Corner Specials</h1>
+<h2>Pani Puri</h2>
+<p>Round hollow puri, fried crisp and filled with a mixture of flavored pani, tamarind chutney, chili, chaat masala, potato, onion and chickpeas.</p>
+<h2>Masala Puri</h2>
+<p>Crushed puris soaked in hot masala gravy made up of Puffed rice, green peas, chili powder, garam masala, chaat masala, coriander powder, Topped with small slices of onions (optional), tomatoes, carrot shavings, coriander leaves and sev.</p>
+<h2>Bhel Puri</h2>
+<p> Puffed rice and sev,  mixed with potatoes, onions, Chat masala, chutney and mixture of fried snacks. Bhelpuri has a balance of sweet, salty, tart and spicy flavors, with different textures, including crispy and crunchy form of puffed rice and fried sev.</p>
+<h2>Sev Puri</h2>
+<p>Puri loaded with diced potatoes, onions, three types of chutneys: tamarind, chili and garlic, topped with sev. It is seasoned with raw mango or with a hint of lemon and chaat masala.</p>
+</body>
+</html>
+
+Show the output.
+
+3. In the output screen explain all the styles added one by one
+Note: internet explorer doesn't display the border, try loading the page in Firefox, Chrome, Safari.
+
+4. Explain about gradient color by changing the background.
+Eg : background-color : light blue;
+(change it to )
+background : linear-gradiant(#d3ebff, #fff0d3);
+
+5. What is an attribute in html?
+A. An attribute is a part of a html element which provides additional information about that element.
+Attribute are always specified inside an opening tag.
+
+6.Note : 
+
+a) Web servers store and serve web pages which are created from html & css.
+b) Browsers retrieve the pages & render their content based on the html & css.
+c) You specify the style characteristics of the elements in your html using css.
+d) Css is an abbreviation for cascading style sheet & is used to control the presentation of your html.
+
+7. Why there is a "body" infront of the css rules? What does that mean?
+A. The "body" in the css means that all the css between the "{" & "}" applies to content within the html <body> element.
+
+8. Introducing the <img> element : The <img> element is used to add an image in a html page.
+Ex : <img src = "Panipuri.jpg">
+
+a) The <img> element 
+b) The src attribute specifies the locaton of an image file.
+c) Image file name.
+
+Note : The <img> element is an inline element, it doesn't cause linebreak to be inserted before & after it. 
+
+The <img> tag doesn't cotain a closing tag, because it is a void element.
+
+9. What is a void element?
+A. Elements that doesn't have any content by design are called as void elements.
+Ex : <img>, <br> etc...
+
+10. Adding the <img> tag to our web page chit chat corner : 
+
+<html>
+<head>
+<title>Chit Chat Corner</title>
+    <style type = "text/css">
+        body{
+            background-color: #ffcfdf;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 2px solid ;
+            padding: 10px 10px 10px 10px;
+            font-family: sans-serif;
+            }
+        
+    </style>
+</head>
+<body>
+<h1>Chit Chat Corner Specials</h1>
+<h2>Pani Puri</h2>
+    <img src="Panipuri.jpg" width="320" height="240">
+<p>Round hollow puri, fried crisp and filled with a mixture of flavored pani, tamarind chutney, chili, chaat masala, potato, onion and chickpeas.</p>
+    
+<h2>Masala Puri</h2>
+    <img src="Masalapuri.jpg" width="320" height="240">
+<p>Crushed puris soaked in hot masala gravy made up of Puffed rice, green peas, chili powder, garam masala, chaat masala, coriander powder, Topped with small slices of onions (optional), tomatoes, carrot shavings, coriander leaves and sev.</p>
+    
+<h2>Bhel Puri</h2>
+     <img src="Bhelpuri.jpg" width="320" height="240">
+<p> Puffed rice and sev,  mixed with potatoes, onions, Chat masala, chutney and mixture of fried snacks. Bhelpuri has a balance of sweet, salty, tart and spicy flavors, with different textures, including crispy and crunchy form of puffed rice and fried sev.</p>
+   
+<h2>Sev Puri</h2>
+    <img src="Sevpuri%20.jpg" width="320" height="240">
+<p>Puri loaded with diced potatoes, onions, three types of chutneys: tamarind, chili and garlic, topped with sev. It is seasoned with raw mango or with a hint of lemon and chaat masala.</p>
+    
+</body>
+</html>
+
+Show the output.
+
+11. Css looks like a completely different language than html. Why?
+A. Html & css are different language because they have very different jobs to perform. Html is to create structure & css is to provide style.
+
+
+12. "#ffcfdf" doesn't look like a color. How does it provide the color "light pink"?
+A. There are few different ways to specify colors in html. But the most popular way is called as "hex code". Which is written as "#ffcfdf".
+
+

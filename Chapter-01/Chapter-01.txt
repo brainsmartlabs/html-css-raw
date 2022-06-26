@@ -1,0 +1,76 @@
+Chapter-01
+
+
+1. Introduction to Web :
+
+a) Web Server : Web Server is a system that delivers content or services to the end users using the power of Internet.
+
+b) Web browser : It is a software application that allows the user to access & display web pages from the web server.
+ (Animation flow : server appears with cloud.
+ file appears.
+ 1st PC appears 
+ it sends a request to server.
+ server gives a response to 1st PC
+ Repeat the animation for 2nd PC, Mobile & third PC.
+ Zoom out.)
+
+2. Web server & its function:
+
+a) Web server waits for request from the web browser.
+b) After receiving the request does an internal search regarding the request.
+c) Retrieves the result to the browser.
+(Animation flow : server appears, server on animation, files appears near server in the circle, browser Pc appears, signal passes to the server(request), file passes to the browser(response).
+
+3. Web browser & its function:
+
+a) Sends a request to the web server.
+b) Displays the web page on the screen.
+(Animation flow: same as above animation with browser getting highlighted.)
+
+4. Difference b/w web server & web browser:
+
+Web server
+a) Hardware which maintains the web application.
+b) Accepts the client requests & generates a response.
+c) Takes more time & huge amount of money for setup or installation.
+
+Web browser
+a) Software which acts as an interface b/w server & client.
+b) sends request to the server & displays the web pages to the clients.
+c) Takes lesser time & almost free of cost for setup or installation.
+
+5. Creating basic HTML page using notepad:(Screen shot & typing animation) 
+
+<html>
+<head>
+<title>Demo Page</title>
+</head>
+<body>
+<h1>Hello World</h1>
+<p>Hi,this is a very minimal "hello world" HTML document.</p>
+</body>
+</html>
+
+a) Save the file as HelloWorld.html
+b) Show the output.
+c) Show the file name.
+d) Click on start menu - Control panel - Appearance & personalization - Folder options - view - Uncheck the option(hide extension for known file types).
+e) Show the file name.
+f) Open file.
+g) <body bgcolor="pink"> show output.
+h) <body bgcolor="sky blue"> show output.
+i) <body bgcolor="#fff2ad"> show output.
+j) Change <h1> to <h2> show output.
+k) Change <h2> to <h3> show output.
+l) Change <h3> to <h6> show output.
+
+Note : To make web pages you need to create files written in the html. Html tells the browser what it needs to display.
+
+6. What makes a text file different from html file ?
+Ans. Html file is a simple text file. We need to add an ".html" extension to the end of the file name.
+
+
+
+
+ 
+

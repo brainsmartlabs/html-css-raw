@@ -1,0 +1,114 @@
+﻿Chapter-28
+
+1. Forms in HTML : The HTML <form> element defines a form that is used to collect user input.
+The HTML form contains input elements such as text feilds, checkboxes, radio buttons, submit buttons etc.
+When the form is submitted, the information is packed up & sent off to a web server.
+Once the server has the form data, it passes it off to the appropriate server script for processing & then the result is returned to the browser.
+(refer text book for diagram.)
+
+a) Browser appears with sparkle effect.
+b) Server with cloud appears with sparkle effect.
+c) Signal passes from browser to server.
+d) Zoom on cloud & server script is already present.
+e) Zoom back & signal passes from web server to browser.
+
+2. <input> elements in form :
+text input : The text <input> element is for entering only a single line of text.
+
+Example : Name : ABC(should be in box)
+
+For which the <input> element is :
+<input type = "text" name = "name">
+use the type attribute with the value as text, to give the input as single line of text.
+
+3. submit input : The submit <input> element creates a button that allows you to submit a form. When you click that button, the browser sends the form to the server script for processing.
+
+Example : submit(should be in a rounded box looking like a button)
+
+The button is labeled "submit" by default, although you can change that label.
+For which the <input> element is :
+	<input type = "submit">
+For a submit button specify the type as submit.
+
+4. radio input : The radio <input> element creates a single control with several buttons, only one of which can be selected at a time. 
+
+Example : yes
+	  no(should be with a circle like a radio button)
+For which the <input> element is :
+	<input type = "radio" name = "yesorno" value = "yes">
+	<input type = "radio" name = "yesorno" value = "no">
+For the radio buttons specify the type as "radio"
+All the radio buttons associated with a given set of choices must have the same name, but each choice has a different value.
+
+5. checkbox input : A checkbox <input> element creates a checkbox control that can be either checked or unchecked. You can use multiple checkboxes together & if you do, you can check as many or few as you like.
+
+Example : White 
+	  Blue 
+	  Black(all the text appear with checkbox) 
+
+Unlike radio buttons, a checkbox allows you to select more than one choice.
+For which the <input> element is :
+	<input type = "checkbox" name = "color" value = "white">
+	<input type = "checkbox" name = "color" value = "blue">
+	<input type = "checkbox" name = "color" value = "black">
+For the checkbox specify the type as "checkbox"
+Related checkboxes share a common name.
+Each checkbox has a different value.
+
+6. Creating the Admission Form for Topper Tutorials : 
+a) Open index.html file.
+b) Add <p> element at the end of the <body> :
+	<p>Click here for <a href = "admission.html">Admission</a></p>
+c) Save the file.
+d) Show the output & explain.
+e) Open a new file in brackets & save it as admission.html.
+f) Inside the admission.html file type :
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Topper Tutorials</title>
+    </head>
+    <body>
+        <h1>Admission Form</h1>
+        <h3>Fill out the form below & click "Apply" to apply</h3>
+        <form>
+            <p>Name of the Student:
+                <input type="text" name="name of the student"></p>
+            <p>Gender:
+                <input type="radio" name="gender" value="male">Male
+            	<input type="radio" name="gender" value="female">Female</p>
+	    <p>Additional coaching:
+            <input type="checkbox" name="course" value="cet">CET<br>
+            <input type="checkbox" name="course" value="aieee">AIEEE<br>
+            <input type="checkbox" name="course" value="comedk">COMEDK<br>
+            </p>
+	    <p><input type="submit" value="Apply"></p>
+	</form>
+    </body>
+</html>
+g) Save the file.
+h) Show the output & explain.
+
+7. Bullet Points :
+a) The <form> element defines the form, & all form input elements are nested inside it.
+b) The <input> element can act as many different input controls on the webpage, depending on the value of its "type" attribute.
+c) A type of "text" creates a single-line text input.
+d) A type of "submit" creates a submit button.
+e) A type of "radio" creates one radio button. All radio buttons with the same name make up a group of mutually exclusive buttons.
+f) A type of "checkbox" creates one checkbox control. You can create a set of choices by giving multiple checkboxes the same name.
+g) The value attribute in the text <input> element can be used to give a single-line text input an initial value.
+h) Setting the value attribute on a submit button changes the text of button.
+i) When a web form is submitted, the form data values are paired with their corresponding names, & all names & values are sent to the server. 
+
+8. Can I make the submit button say something other than "submit"?
+A. Yes, just put a value attribute in the element & give it a value like "Apply". You can also use the value attribute of text input to give that input some default text.
+
+9. Is there a limit to how much text I can type into a text <input>?
+A. Browsers do place a limit on the amount of text you can type into a text <input>; However, its usually way more than you would ever need to type. If you would like to limit how much your users can type into a text <input>, you can use the maxlength attribute & set it to a specific number of characters. For example, maxlength = "100" would limit users to typing at most 100 characters.
+
+10. Didn't you say that the name for each form element needs to be unique? But the radio <input> elements all have the same name.
+A. Right. Radio buttons come as a set. Think about it : If you push one button in, The rest pop out. So, for the browser to know the radio buttons belong together, you use the same name. Say you have a set of radio buttons named "color" with values of "red", "green" & "blue". They are all colors & only one color can be selected at a time, so a single name for the set makes sense.
+
+11. What about checkboxes? Do they work like radio buttons?
+A. Yes; The only difference is that you are allowed to select more than one choice with a checkbox. When the browser sends the form data to the server, it combines all the checkbox values into one value & sends them along with the checkbox name. So, say you had "color" checkboxes for "white", "blue" & "black" & you checked them all; Then the browser would send "color = white&blue&black" to the server. 

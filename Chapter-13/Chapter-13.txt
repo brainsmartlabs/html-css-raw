@@ -1,0 +1,182 @@
+Chapter-13
+
+1. For script : We have already taught a bit about css & this chapter we are going in depth regarding css.
+
+2. Using css with HTML : 
+p{
+	color : maroon;
+}
+
+a) Select the element you want to style.
+b) Specify the property you want style.
+c) To separate the property & its value use the ':'.
+d) Set the value as maroon.
+e) At the end put a ';'.
+Note : All the styles for an element should be enclosed by '{ }' braces.
+
+The selector, the '{ }' braces & the style for that element are together called as a RULE.
+
+The rule can be written in a single line as follows : p{ color : maroon; }
+
+You can add as many properties & values as you like in each rule.
+
+3. Adding some new styles to index.html file in our topper-tutorials folder : 
+p{
+	color : maroon;
+}
+
+h2,h3 {
+	font-family : serif;
+}
+
+a) Fast type animation for both the rules.
+b) Focus on h2,h3 rule & explain about multiple selectors.
+c) Show the output & explain the changes.
+
+4. Validating index.html(Screen shot ani):
+
+a) W3C validator screen is present.
+b) Upload index.html file & click on validate.
+c) CSS warning will be displayed.
+d) Cam focus on warning & explain.
+
+5. Creating index.css file :(Screen shot ani using brackets)
+
+body{ 
+    border: 4px double #379a33;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family:sans-serif;
+    background-color:lavender;
+}
+p{
+    color:maroon;
+}
+h2,h3{
+    font-family: serif;
+
+}
+h3{
+    text-decoration: underline;
+}
+p.vision{
+    color:#363636;
+}
+
+p.faculty{
+    font-weight: bold;
+}
+
+a) Create folder by name css inside our topper-tutorials folder.
+b) Open index.html file.
+c) Copy all css files.
+d) Click on file menu & select new.
+e) Paste all css rules.
+f) Click on file menu & select save as.
+g) Save the file as index.css inside css folder.
+
+Note : Don't copy the <style> & </style> tags because the css file contains only css content & not HTML.
+
+6. Removing <style> tags inside index.html file :
+
+a) Open Index.html file.
+b) Select all css rules along with <style> tags.
+c) Delete keystroke appears & selected text disappears.
+d) Save the file & show the output.
+e) Expain about the output.
+
+7. Validating index.css : (Screen shot ani)
+
+We can validate the css file in W3C validator by using : jigsaw.w3.org/css-validator/
+
+a) In google type jigsaw.w3.org/css-validator/ & click on search.
+b) Explain about three types to validate the css file one by one.
+c) Upload index.css file & click on check.
+d) No errors will be present.
+
+8. Introducing <link> element : The <link> element is used to define a bridge from one document to another which allows you to import the contents of a script or resource such as 'Stylesheet' into your HTML document.
+
+Note : The <link> element can also be used to link different versions of a page together.
+
+Example : <link type = "text/css" rel = "stylesheet" href = "index.css">
+
+a) Use the link element to external resources.
+b) The type of this information is "text/css" (css stylesheet).
+c) The 'rel' attribute specifies the relationship between the html file & the thing you are linking to (stylesheet).
+d) The stylesheet is located at 'href'.
+
+Note : <link> is a void element hence there is no closing tag.
+
+9. Linking from index.html to index.css :
+
+a) Open the file index.html.
+b) Cam focus on <head> tag.
+c) Add <link type="text/css" rel="stylesheet" href="css/index.css"> below the <title> tag.(type ani)
+d) Show output & explain.
+
+10. Linking from location.html & faculty.html to index.css :
+
+a) Open location.html file.
+b) Select styles from the opening <style> tag to closing </style> tag.
+c) Delete keystroke appears & selected text disappears.
+d) Cam focus on <head> tag.
+e) Add <link type="text/css" rel="stylesheet" href="css/index.css"> below the <title> tag.(type ani)
+f) Show output & explain.
+g) Open faculty.html file.
+h) Select styles from the opening <style> tag to closing </style> tag.
+i) Delete keystroke appears & selected text disappears.
+j) Cam focus on <head> tag.
+k) Add <link type="text/css" rel="stylesheet" href="css/index.css"> below the <title> tag.(type ani)
+l) Show output & explain.
+
+11. Bullet points :
+
+a) CSS contains simple statements called rules. each rule provides the style for a selection of HTML elements.
+b) A typical rule consists of a selector along with one or more properties or values.
+c) The selector specifies which elements the rule applies to.
+d) By separating element names with commas you can select multiple elements at once.
+e) The link element is used to link to an external stylesheet.
+
+12. Is it compulsory to write style rules in a separate language?
+A. It is better to provide styles in a separate language called css as css is better suited for specifying style information compared to HTML & also it handles styles for multiple pages in a much better way.
+
+13. How many rules can be added for a single element?
+A. We can add as many rules as we want for a single element. Each rule adds a new style information for that element.
+
+14. What is the difference between text-decoration & border-bottom property?
+A. They are two different styles. Where text-decoration property with the value 'underline' produces a line equal to the length of the text below that element & the border-bottom property with the value '1px solid black' color produces a line till the edge of the page below that element.
+
+15. How many properties can be set on a particular element?
+A. There are way too many properties that can be set on a particular element. We will be teaching all of those in further classes.
+
+16. What is the advantage of adding multiple selectors in a single rule?
+A. The advantage of combining common style rules together is if you have to change a rule for any of that element, you just have to change them in one rule & the other changes automatically as its combine.
+
+17. Is it necessary to worry if we get warnings in W3C validator?
+A. It is good to clear all the warnings displayed by W3C as it displays only those warnings which are related to industry standards. Having said that the validator just suggests to change and it is completely left to you to execute those changes. 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,156 @@
+Chapter-16
+
+1. Introduction to web colors : Web colors are the colors used for displaying web pages in more colorful, vibrant & attractive manner.
+
+Web colors are generally used to display background-color, border-color, font color etc...
+
+Example : background-color : maroon;
+
+In css there are three ways to specify web colors : 
+
+a) Specify the name of a color.
+b) Specify a color in term of its relative percentages in red, green, blue.
+c) Specify the color in hexcode.
+
+2. Specifying color by name : The most easiest & commonly used way to describe a color in css is by writing the color name.
+
+Thre are 16 basic colors & 150 extended colors.
+
+16 basic colors are :
+
+Aqua, Black, Blue, Fuchsia, Gray, Green, Lime, Maroon, Navy, Olive, Purple, Red, Silver, Teal, White, Yellow.
+
+Example : h1 {
+		color : blue;
+	     }
+
+Note : css color names are not case-sensitive.
+
+3. Specifying colors in red, green & blue values : We can specify a color as the respective amount of red, green & blue color.
+
+Each parameter(red, green, blue) defines the intensity of the colors between 0 to 255.
+
+Say for instance, if we need yellow color, then we have to write the code as : 
+
+body {
+	background-color : rgb (100%, 100%, 0%);
+     }
+
+a) Represents red color percentage as 100%.
+b) Represents green color percentage as 100%.
+c) Represents blue color percentage as 0%.
+
+We can also specify the red, green & blue as a numeric value between 0 to 255.
+
+body {
+	background-color : rgb (255, 255, 0);
+     }
+a) Represents red color as 255.
+b) Represents green color as 255.
+c) Represents blue color as 0.
+
+4. Specifying colors using hexcode : A hexcode is a way of specifying colors using hexadecimal values.
+
+Hexcode always starts with a '#' sign & followed by 6 digits (0 - 9)/ alphabets (a - f).
+
+The first two digits represents the amount of red, next two digits represents the amount of green & the last two digits represents the amount of blue.
+
+Example : h1 {
+		color : #0c67b6;
+	     }
+
+a) First two characters represents intensity of red.
+b) Next two characters represents intensity of green.
+c) last two characters represents intensity of blue.
+
+5. Calculating the hexcode : hexcodes are not based on 10 digits (0 - 9) but are based on 16 digits (0 - f).
+
+Using hexcodes, we need a single digit to count from 0 - 15 & so once we cross the digit 9 we start using letters.
+
+0 1 2 3 4 5 6 7 8 9 10(a) 11(b) 12(c) 13(d) 14(e) 15(f)
+
+Steps for calculating hexcode : 
+
+a) Separating the three components : separate the red, green & blue components of the hexcode
+Example : #0c67b6 (Explain)
+
+b) Converting hex numbers to decimal numbers : calculate the value for each digit within a range from 0 - 255.
+Example : #0c67b6 (r = 12, g = 103, b = 182) show the calculation & explain.
+
+Animation flow : take the left most digit & convert it to its decimal value( result 0), Multiply it by 16 (result 0), take the right most digit & convert it to its decimal value ( result 12), add both the numbers ( 0 + 12 = 12) repeat the same steps for other two values.
+
+Note : We can also find the web colors using online web chart.
+
+6. Adding color to <h1> element in index.css (Screen shot animation)
+
+a) Open index.css file.
+b) In <h1> element add the color as #0c67b6.
+c) Save the file.
+d) Cam pans to index.html & show the output.
+e) Cam pans to index.css
+f) Right click on #0c67b6 & click on quick edit option.
+g) Quick edit drop down window appears (Explain about it).
+h) Click on rgba inside drop down window.
+i) Hexcode changes to rgb(12, 103, 182).
+j) Save the file.
+k) Cam pans to index.html & show the output.
+
+7. What are complementary colors?
+A. Complementary colors are opposite colors used as a pair in webpages which pleases the viewer's eye.
+
+In a webpage if we use more than one color it should be complementing one another.
+
+8. How to know the complementary colors? (Screen shot animation) 
+
+a) In google type 'color wheel sessions college' and click on search.
+b) Select "Color Wheel - Color Calculator Sessions College".
+c) Color calculator window will open.
+d) Move the color selector to whichever color you want.
+e) If we click on the first option that is the complementary color option we'll get a opposite color to the color we have chosen.
+f) If we click on the second option that is the monochromatic color option we'll get two different shades of the same color.
+g) If we click on the third option that is the analog color option we'll get a color on each side of the color we have chosen. 
+h) If we click on the fourth option that is the split-complementary color option then we'll get a color adjacent to the complementary color we have chosen.
+i) If we click on the fifth option that is the triadic color option we'll get two different complementary colors to the color we have chosen.
+j) If we click on the last option that is the tetradic color option we'll get three different complementary colors to the color we have chosen.
+
+9. Bullet points : 
+
+a) Web colors are created by mixing different amount of red, green & blue colors.
+b) If you mix 100% of red, 100% of green, 100% of blue you will get white color as the result.
+c) If you mix 0% of red, 0% of green, 0% of blue you will get black color as the result.
+d) You can specify the colors : using its name, using the % of red, green & blue colors, using numerical values ranging from 0 - 255 for red, green & blue colors, using the hexcode.
+
+10. Why there are two different ways to specify RGB values? Doesn't % seem more straight forward? 
+A. We can specify the rgb values using numbers ranging between 0 - 255. This number is related to the number of values that can be held in one byte of information.
+
+11. I have never seen anyone using rgb or actual color name in their css. Its seems everyone uses the hexcodes?
+A. Using rgb values or actual color names is becoming more common, but "hexcodes" are most widely used because people consider them a convenient way to specify color.
+
+12. Why the color property isn't called text-color?
+A. The color property really controls the foreground color of an element. So it controls both the text & the border color, although you can give the border its own color with the border-color property. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

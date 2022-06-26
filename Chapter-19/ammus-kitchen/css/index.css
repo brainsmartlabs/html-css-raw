@@ -1,0 +1,27 @@
+body{ 
+    font-family:Verdana,Geneva,Arial,sans-serif;
+    border: 4px dashed black;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+
+    background-color :#94ccac;
+}
+h1{
+    font-size: 200%;
+    text-align: center;
+    color:#0c67b6;
+}
+h2{
+    font-size:150%;
+    text-decoration: underline;
+}
+h4{
+    font-size:110%;
+    font-weight: normal;
+}
+
+q{
+    font-style: italic;
+}

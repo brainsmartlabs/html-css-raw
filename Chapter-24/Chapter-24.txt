@@ -1,0 +1,147 @@
+﻿Chapter-24
+
+1. Introducing CSS table display : CSS table display allows you to display block elements in a table with rows and columns.
+
+By putting your content in a CSS table, you can easily create multicolumn designs with HTML & CSS.
+
+A table has rows & columns, & at the intersection of row & column we have a cell.
+
+2. Adding HTML structure for the table display : 
+a) Open index.html file in ammus-kitchen folder.
+b) Add the new <div> with an id "tableContainer" around the "paratha_ingredients" & "paratha_preparation" <div>s.
+c) Then add another <div> with an id "tableRow" around the "paratha_ingredients" & "paratha_preparation" <div>s, but nested inside the "tableContainer" <div>.
+
+<div id = "tableContainer">
+<div id = "tableRow">
+<div id = "paratha_ingredients">
+----------------
+----------------
+</div>
+<div id = "paratha_preparation">
+----------------
+----------------
+</div>
+</div>
+</div>
+d) Save the file.
+
+3. Using CSS to create table display : 
+a) Open index.css file.
+b) Remove position, top, left property.
+c) Save the file.
+d) Show the output.
+e) Add : div#tableContainer {
+		display : table;
+		border-spacing : 10px;
+	   }
+f) Add : div#tableRow {
+		display : table-row;
+	   }
+g) Add : #paratha_ingredients {
+			display : table-cell;
+		   }
+h) Add : #paratha_preparation {
+			display : table-cell;
+		   }
+i) Save the file.
+j) Show the output & explain.
+
+4.
+a) Open index.html file.
+b) Add : 
+	<div id = "tableContainer">
+	<div id = "tableRow">
+	<div id = "rasam_ingredients">
+	-----------------------------
+	-----------------------------
+	</div>
+	<div id = "rasam_preparation">
+	-----------------------------
+	-----------------------------
+	</div>
+	</div>
+	</div>
+c) Add : 
+	<div id = "tableContainer">
+	<div id = "tableRow">
+	<div id = "pakoda_ingredients">
+	-----------------------------
+	-----------------------------
+	</div>
+	<div id = "pakoda_preparation">
+	-----------------------------
+	-----------------------------
+	</div>
+	</div>
+	</div>
+d) Save the file.
+
+5.
+a) Open index.css file.
+b) Add : 
+	#rasam_ingredients {display : table-cell;}
+	#rasam_preparation {display : table-cell;}
+	#pakoda_ingredients {display : table-cell;}
+	#pakoda_preparation {display : table-cell;}
+c) Save the file.
+d) Show the output & explain.
+
+6. For script : We have taught you about the fixed positioning in last chapter. Now let us add the coupon image to our ammus-kitchen webpage by using the fixed positioning.
+
+7. Adding recipies coupon to our ammus-kitchen page : 
+a) Open index.html file.
+b) Add coupon <div> at the end of <body>.
+	<div id = "coupon">
+	<a href = "recipies.html" title = "click here to get free recipies">
+	<img src = "images/coupon.png" alt = "recipies coupon"> 
+	</a>
+	</div>
+c) Save the file.
+d) Open index.css file.
+e) Add : 
+	#coupon {
+		 position : fixed;
+		 top : 650px;
+		 left : -85px;
+		}
+f) Save the file.
+g) Show the output & explain.
+
+8. Bullet points : 
+a) CSS table display allows you to layout your elements in a table-like layout.
+b) To create a CSS table display, use a  block element for the table, block elements for the rows, & block elements for the cells. Typically, these will be <div> elemets.
+c) Table display is a good layout strategy for multicolumn layouts where even columns of content are needed.
+
+9. What do i do if i need more than one row in my table display?
+A. If you need to display content in multiple rows, then we just add more html structure to support that. To add another row, you would add another <div> similar to the "tableRow" <div>, nested inside the "tableContainer" <div>, & containing the same number of columns as the first row. You can keep adding rows by adding more <div> like this.
+
+10. Why did we add the vertical alignment to each cell in the CSS with vertical-align : top?
+A. We added vertical-align : top to each table cell to make sure that all the content aligns with the top of the cell. If each cell is aligned this way, then the content in each columns should align at the top, which makes for a more professional looking presentation. If you dont add a vertical alignment, you may find the default alignment in your browser is set to middle instead. In some cases, that might be what you want. You can set the vertical alignment to top, middle or bottom.
+
+11. Does it matter how much content i put in a cell?
+A. Not really. You will probably want to make sure that no one column has so much more content than other columns that your page looks unbalanced, but ultimately, its up to you & how you want your page to look.
+
+12. Can we control the width of the columns?
+A. Yes, you have some control over the width of the columns with the width property.
+
+13. Could we have positioned the header images using one of the other layout strategies we talked about?
+A. Yes, indeed. There is usually more than way of doing things in css. Another strategy might have been to use absolute positioning. 
+
+14. I was playing with a couple of absolutely positioned <div> elements, & one always is displayed on top of the other. Is there a way i can change which one is on top?
+A. Yes, every positioned element has what is called a "z-index", which is the ordering of the elements on an imaginary z-axis. You use it like this :
+#div1 {
+	position : absolute;
+	top : 30px;
+	left : 30px;
+	z-index : 0;
+    }
+#div2 {
+	position : absolute;
+	top : 30px;
+	left : 30px;
+	z-index : 1;
+      }
+Those rules would place the element with id "div2" on top of the element with an id "div1"
+
+15. Could you position an element completely off screen if you want?
+A. Yes for instance, the coupon image is 330px wide, so if you set the left position to -330px, the coupon would disappear. Its still there on the page, its just not visible in the viewport. Remember, the viewport is the visible area of the page. 
